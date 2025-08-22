@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MyCricInfo</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+    }
+
+    /* HEADER */
+    header {
+      background: #1a1a1a;
+      color: #fff;
+      padding: 15px 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+    header span {
+      font-size: 14px;
+      opacity: 0.8;
+    }
+
+    /* NAVIGATION */
+    nav {
+      background: #028062;
+      display: flex;
+      padding: 10px 30px;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-right: 20px;
+      font-size: 14px;
+      font-weight: bold;
+      position: relative;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* DROPDOWN MENU */
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background: #fff;
+      min-width: 180px;
+      box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    .dropdown-content a {
+      color: #000;
+      padding: 10px 15px;
+      display: block;
+      text-decoration: none;
+    }
+    .dropdown-content a:hover {
+      background: #f1f1f1;
+    }
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    /* CONTENT */
+    .content {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 20px;
+      padding: 20px 30px;
+    }
+    .main, .sidebar {
+      background: #fff;
+      padding: 20px;
+      border-radius: 6px;
+    }
+    h2 {
+      margin-top: 0;
+      border-bottom: 2px solid #028062;
+      padding-bottom: 5px;
+      font-size: 18px;
+    }
+    .story {
+      margin-bottom: 15px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #1a1a1a;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <h1>MyCricInfo</h1>
+    <span>Cricket News & Updates</span>
+  </header>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <a href="#">Home</a>
+    <a href="LiveScores.html">Live Scores</a>
+    <a href="News.html">News</a>
+    <a href="UpcomingMatches.html">Upcoming Matches</a>
+
+    <div class="dropdown">
+      <a href="#">Series ▾</a>
+      <div class="dropdown-content">
+        <a href="#">ICC World Cup</a>
+        <a href="#">T20 World Cup</a>
+        <a href="#">WTC</a>
+        <a href="#">Champions Trophy</a>
+        <a href="#">IPL</a>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <a href="#">Teams ▾</a>
+      <div class="dropdown-content">
+        <a href="#">India</a>
+        <a href="#">Australia</a>
+        <a href="#">England</a>
+        <a href="#">Sri Lanka</a>
+        <a href="#">Afghanisthan</a>
+        <a href="#">West Indies</a>
+        <a href="#">Newzealand</a>
+        <a href="#">South Africa</a>
+        <a href="#">Pakistan</a>
+        <a href="#">Bangladesh</a>
+      </div>
+    </div>
+
+    <a href="Rankings.html">Rankings</a>
+    <a href="#">More</a>
+  </nav>
+
+  <!-- MAIN CONTENT -->
+  <div class="content">
+    <div class="main">
+      <h2>Top Stories</h2>
+      <div class="story">
+        <h3>India defeat Australia in thriller</h3>
+        <p>Match report and highlights of an exciting game...</p>
+      </div>
+      <div class="story">
+        <h3>England announce World Cup squad</h3>
+        <p>Major surprises as young talent makes the cut...</p>
+      </div>
+    </div>
+
+    <div class="sidebar">
+      <h2>Live Matches</h2>
+      <p>India vs Pakistan - Live</p>
+      <p>Australia vs England - Coming Soon</p>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 MyCricInfo | Designed in ESPNcricinfo Style</p>
+  </footer>
+</body>
+</html>
