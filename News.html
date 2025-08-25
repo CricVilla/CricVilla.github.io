@@ -1,85 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7227512149078461"
-     crossorigin="anonymous"></script>
-  <meta charset="UTF-8">
-  <title>Cricket News</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f4f4f4;
-    }
-    header {
-      background: #1a1a1a;
-      color: white;
-      padding: 15px;
-      text-align: center;
-    }
-    .news {
-      padding: 20px;
-      text-align: center;
-    }
-    h2 {
-      color: #1a1a1a;
-    }
-  </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Cricket News Page</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background: #f5f5f5;
+    color: #333;
+  }
+  .search-container {
+    max-width: 600px;
+    margin: 0 auto 30px;
+    text-align: center;
+  }
+  .search-container input[type="text"] {
+    width: 80%;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 2px solid #007BFF;
+    border-radius: 25px;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  .search-container input[type="text"]:focus {
+    border-color: #0056b3;
+  }
+  .news-list {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgb(0 0 0 / 0.1);
+  }
+  .news-item {
+    border-bottom: 1px solid #ddd;
+    padding: 12px 0;
+  }
+  .news-item:last-child {
+    border-bottom: none;
+  }
+  .news-title {
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0 0 6px;
+    color: #007BFF;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  .news-title:hover {
+    text-decoration: underline;
+  }
+  .news-date {
+    font-size: 13px;
+    color: #888;
+    margin-bottom: 6px;
+  }
+  .news-summary {
+    font-size: 15px;
+    color: #555;
+  }
+</style>
 </head>
 <body>
-  <header>
-    <h1>Cricket News</h1>
-  </header>
 
-  <div class="news">
-    <section id="news">
-  <h2>Latest News</h2>
+<div class="search-container">
+  <input type="text" placeholder="Search cricket news..." id="searchInput" onkeyup="searchNews()" />
+</div>
 
-  <article class="news-item">
-    <h2>Shubman Gill 'Unwell' Days After Asia Cup Squad Announcement</h2>
-    <p><small>23 August 2025 | CricVilla News Desk</small></p>
-    
-    <p>
-      Shubman Gill has been in focus for the last couple of months. He was named the 
-      Indian cricket team's <strong>Test captain</strong> and excelled in England. Then, there were 
-      doubts over his selection for the Asia Cup T20, but he made it through and was 
-      named the <strong>vice-captain</strong>.
-    </p>
-
-    <p>
-      In the midst of this, a report has claimed that the 25-year-old Indian cricket 
-      team Test captain is likely to miss a major BCCI event, which would have been the 
-      top Indian cricket team stars' first event since the England tour.
-    </p>
-
-    <p>
-      While no official update has been provided by the BCCI yet, fans and experts are 
-      waiting eagerly for clarity. Gill’s presence in the Asia Cup would be vital for 
-      India’s campaign, given his form and leadership role in recent months.
-    </p>
-  </article>
-      <article class="news-item">
-  <h2>Gill may skip Duleep Trophy</h2>
-  <p>Shubman Gill is likely to miss the upcoming Duleep Trophy, starting in Bengaluru in a few days, as the India skipper is reportedly unwell. He was appointed skipper of the North Zone team.</p>
-
-  <p>The North Zone selection committee has been anticipating the possibility of Gill's unavailability for the inter-zonal competition, scheduled to begin on August 28 at the Centre of Excellence (CoE) in Bengaluru, for the last few days. However, as of Friday (August 22), they had not received any official communication from the North Zone associations.</p>
-
-  <p>However, Cricbuzz understands that the physios recently examined him and submitted a health status report to the Board of Control for Cricket in India (BCCI) about 24 hours ago. At present, Gill (25) is in Chandigarh, resting at home.</p>
-
-  <p>Officials within the BCCI and selection committee - national and zonal - did not immediately respond to specific questions about Gill's availability but sources close to the India Test skipper confirmed the development.</p>
-
-  <p>Gill would not have featured in the entire Duleep Trophy in any case, as he was due to leave for national duty in the Asia Cup starting September 9 in the UAE. The Duleep Trophy runs from August 28 to September 15, and at best, he could have been available only for the opening game. North Zone are slated to face East Zone in their quarterfinal at the BCCI's Centre of Excellence ground in Bengaluru.</p>
-
-  <p>Earlier this month, Gill returned from a highly successful tour of England where he scored 754 runs in five Tests of the Anderson-Tendulkar Trophy which prompted the national selectors to pick him in the India Twenty20 squad for the Asia Cup. In fact, he was appointed vice-captain for the Asia Cup.</p>
-
-  <p>The North Zone selectors had already made an arrangement of a replacement in the event of Gill missing the competition. Shubham Rohilla was named as a replacement for Gill at the time of announcing the squad. Ankit Kumar was named vice-captain of the North Zone side which means he will now lead the zone in Duleep Trophy.</p>
-
-  <p>Arshdeep Singh and Harshit Rana, both named in the Asia Cup squad, will inevitably leave the zonal side after the first game for national duty. Gurnoor Brar and Anuj Thakral were named as the respective replacements for the two pacers, should North Zone proceed beyond the first match, which is a knockout game.</p>
-
-  <p>The North Zone selection committee consists of Chetan Sharma (Haryana), Nikhil Chopra (Delhi), Amit Uniyal (Chandigarh), Mithun Minhas (J&K and convenor), Raj Kumar (Services) and Mukesh Kumar (Himachal Pradesh).</p>
-</article>
-</section>
+<div class="news-list" id="newsList">
+  <div class="news-item">
+    <a href="#" class="news-title">Cheteshwar Pujara announces retirement from all international formats</a>
+    <div class="news-date">August 24, 2025</div>
+    <div class="news-summary">Veteran Indian batsman Cheteshwar Pujara officially retires from all forms of international cricket after an illustrious career.</div>
   </div>
+  <div class="news-item">
+    <a href="#" class="news-title">Sanju Samson scores century with his brother in Kerala Cricket League 2025</a>
+    <div class="news-date">August 25, 2025</div>
+    <div class="news-summary">Sanju Samson had an unforgettable moment scoring a century with his brother batting alongside in a thrilling Kerala Cricket League match.</div>
+  </div>
+  <div class="news-item">
+    <a href="#" class="news-title">Duleep Trophy 2025 campaign begins on August 28</a>
+    <div class="news-date">August 25, 2025</div>
+    <div class="news-summary">The prestigious Duleep Trophy 2025 cricket tournament kicks off on August 28 with finals scheduled for mid-September.</div>
+  </div>
+  <div class="news-item">
+    <a href="#" class="news-title">Jonathan Trott appointed head coach bringing strong record</a>
+    <div class="news-date">August 25, 2025</div>
+    <div class="news-summary">Former England batsman Jonathan Trott steps in as head coach, known for his technically sound batting and coaching skills.</div>
+  </div>
+  <div class="news-item">
+    <a href="#" class="news-title">Wasim Akram hopes for India-Pakistan Test cricket in future</a>
+    <div class="news-date">August 24, 2025</div>
+    <div class="news-summary">Legendary pacer Wasim Akram expresses his desire to see a resumption of Test series between India and Pakistan.</div>
+  </div>
+  <div class="news-item">
+    <a href="#" class="news-title">Fatima Sana to lead Pakistan women in first ODI World Cup appearance</a>
+    <div class="news-date">August 25, 2025</div>
+    <div class="news-summary">Fatima Sana named captain of Pakistan’s women’s team for their first-ever ODI World Cup campaign starting September 30.</div>
+  </div>
+  <div class="news-item">
+    <a href="#" class="news-title">Dream11 terminates contract with BCCI, affecting Team India sponsorship</a>
+    <div class="news-date">August 24, 2025</div>
+    <div class="news-summary">Fantasy sports giant Dream11 has officially ended its sponsorship contract with BCCI, leaving Team India seeking a new title sponsor.</div>
+  </div>
+  <div class="news-item">
+    <a href="#" class="news-title">India’s Asia Cup 2025 squad to feature young faces after retirement of senior stars</a>
+    <div class="news-date">August 20, 2025</div>
+    <div class="news-summary">India prepares a youthful squad for the upcoming Asia Cup following retirements of Virat Kohli and Rohit Sharma from T20Is.</div>
+  </div>
+  <div class="news-item">
+    <a href="#" class="news-title">Kerala Cricket League 2025 match ends in thrilling finish with Kochi Blue Tigers victorious</a>
+    <div class="news-date">August 25, 2025</div>
+    <div class="news-summary">Kochi Blue Tigers clinched a tense victory over Aries Kollam Sailors, thrilling fans in Kerala Cricket League 2025.</div>
+  </div>
+  <div class="news-item">
+    <a href="#" class="news-title">Upcoming India vs West Indies Test series scheduled for October 2025</a>
+    <div class="news-date">August 7, 2025</div>
+    <div class="news-summary">India will host a two-match Test series against West Indies in October, continuing the ICC World Test Championship calendar.</div>
+  </div>
+</div>
+
+<script>
+  function searchNews() {
+    const input = document.getElementById('searchInput');
+    const filter = input.value.toLowerCase();
+    const newsList = document.getElementById('newsList');
+    const newsItems = newsList.getElementsByClassName('news-item');
+
+    for (let i = 0; i < newsItems.length; i++) {
+      const title = newsItems[i].getElementsByClassName('news-title')[0].textContent.toLowerCase();
+      const summary = newsItems[i].getElementsByClassName('news-summary')[0].textContent.toLowerCase();
+
+      if (title.indexOf(filter) > -1 || summary.indexOf(filter) > -1) {
+        newsItems[i].style.display = "";
+      } else {
+        newsItems[i].style.display = "none";
+      }
+    }
+  }
+</script>
+
 </body>
 </html>
