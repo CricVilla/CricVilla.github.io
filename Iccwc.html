@@ -6,6 +6,85 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ICC World Cup</title>
+    </style>
+    body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: #FAFAFA;
+  color: #222;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: linear-gradient(90deg, #0466c8, #2196f3);
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(50,100,255,0.12);
+}
+
+header img {
+  height: 80px;
+  vertical-align: middle;
+}
+
+nav {
+  background-color: #222;
+  padding: 10px;
+  text-align: center;
+}
+
+nav a {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: background 0.2s;
+}
+nav a:hover {
+  background: #1976d2;
+}
+
+.players-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  margin: 30px 0;
+}
+
+.player-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(60,120,200,0.10);
+  padding: 16px;
+  width: 220px;
+  text-align: center;
+}
+
+.player-card img {
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.player-card h2 {
+  font-size: 1.12em;
+  margin: 8px 0 4px 0;
+}
+
+footer {
+  background: #1976d2;
+  color: #fff;
+  text-align: center;
+  padding: 12px 0;
+  margin-top: 30px;
+}
+</style>
 </head>
 <body>
     <header>
@@ -61,3 +140,4 @@
 </body>
 
 </html>
+
