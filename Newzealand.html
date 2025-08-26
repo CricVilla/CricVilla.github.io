@@ -43,48 +43,253 @@
             font-size: 0.95em;
         }
     </style>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background: #f8faff;
+  margin: 0;
+  padding: 0;
+}
+
+.news-list h2, h2 {
+  color: #1560bd;
+  margin-top: 28px;
+  letter-spacing: 1px;
+}
+.news-list {
+  margin-bottom: 28px;
+}
+.news-item {
+  background: #eaf1fb;
+  margin-bottom: 13px;
+  padding: 12px 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px #eee;
+}
+.news-title {
+  font-weight: bold;
+  color: #1560bd;
+  text-decoration: none;
+  font-size: 1.12em;
+}
+.news-summary {
+  color: #28709e;
+  font-size: 1em;
+}
+
+.squad-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 30px;
+}
+.player-card {
+  background: #edf6fd;
+  border: 1px solid #bedcf4;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px #e8e8ee;
+  padding: 13px 18px;
+  min-width: 150px;
+  margin-bottom: 13px;
+  transition: box-shadow .2s;
+}
+.player-card:hover {
+  box-shadow: 0 8px 24px #c7e2ff;
+}
+.player-name {
+  font-size: 1.15em;
+  font-weight: bold;
+  color: #10255c;
+  margin-bottom: 4px;
+  letter-spacing: .3px;
+}
+.player-role {
+  color: #2484a1;
+  font-size: .97em;
+}
+
+.star-players {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 16px;
+  font-size: 1.07em;
+  background: #f5fbff;
+  box-shadow: 0 2px 10px #eaf1fb;
+  border-radius: 7px;
+  overflow: hidden;
+}
+.star-players th, .star-players td {
+  border: 1.5px solid #bedcf4;
+  padding: 8px 16px;
+  text-align: left;
+}
+.star-players th {
+  background: #1560bd;
+  color: #fff;
+  font-size: 1.12em;
+  font-weight: bold;
+}
+.star-players td {
+  font-size: 1.11em;
+}
+.star-players td[style] {
+  font-size: 1.16em !important;
+  color: #1768b2 !important;
+  font-weight: bold;
+}
+</style>
 </head>
 <body>
-    <div class="header">New Zealand Cricket Team</div>
-    <div class="container">
-        <div class="section-title">Latest News</div>
+<!-- Black/Silver heading bar for New Zealand -->
+<div style="background:#141414; color:#bfc7d5; padding:16px 0; text-align:center; font-size:2em; font-weight:bold; letter-spacing:1px; margin-bottom:22px; border-radius:8px;">
+  New Zealand Cricket Team
+</div>
 
-        <div class="news-item">
-            <span class="news-headline">New Zealand achieve record Test victory in Zimbabwe</span><br>
-            <span class="news-date">August 9, 2025</span><br>
-            The Black Caps concluded their Zimbabwe tour with their biggest-ever Test win, defeating Zimbabwe by an innings and 359 runs, highlighted by Zakary Foulkes’ impressive nine-wicket debut and a mammoth 601-run total[web:66][web:69].
-        </div>
+<!-- Latest News -->
+<div class="news-list">
+  <h2>Latest News</h2>
+  <div class="news-item">
+    <a href="#" class="news-title">Kane Williamson returns as captain for ODI and Test</a>
+    <div class="news-summary">Williamson leads the Blackcaps in home and away series through 2025.</div>
+  </div>
+  <div class="news-item">
+    <a href="#" class="news-title">Mitchell Santner named T20I captain for Asia Cup 2025</a>
+    <div class="news-summary">Santner will guide the T20 team in UAE with Tim Seifert as vice-captain.</div>
+  </div>
+  <div class="news-item">
+    <a href="#" class="news-title">Devon Conway and Tom Latham shine in recent ODIs</a>
+    <div class="news-summary">Conway and Latham anchor chases and dominate opposition bowling.</div>
+  </div>
+  <div class="news-item">
+    <a href="#" class="news-title">Matt Henry star performer in Test series against Pakistan</a>
+    <div class="news-summary">Henry’s pace and swing trouble opposition batters, taking eight wickets in two matches.</div>
+  </div>
+  <div class="news-item">
+    <a href="#" class="news-title">Rachin Ravindra named New Zealand’s player of the month</a>
+    <div class="news-summary">Young all-rounder impresses in all formats with bat and ball.</div>
+  </div>
+  <div class="news-item">
+    <a href="#" class="news-title">Trent Boult set for home Test return</a>
+    <div class="news-summary">Left-arm pace ace ready for a comeback after injury layoff.</div>
+  </div>
+</div>
 
-        <div class="news-item">
-            <span class="news-headline">Tom Latham ruled out of Test decider</span><br>
-            <span class="news-date">August 8, 2025</span><br>
-            Test captain Tom Latham missed the second Zimbabwe Test due to a persistent shoulder injury, with Mitchell Santner stepping in as skipper[web:65][web:66].
-        </div>
+<!-- ODI Squad -->
+<h2>Current ODI Squad</h2>
+<div class="squad-list">
+  <div class="player-card"><div class="player-name"><strong>Kane Williamson</strong> (Captain)</div><div class="player-role">Batsman</div></div>
+  <div class="player-card"><div class="player-name"><strong>Devon Conway</strong></div><div class="player-role">Opener</div></div>
+  <div class="player-card"><div class="player-name"><strong>Tom Latham</strong></div><div class="player-role">Opener/Wicketkeeper</div></div>
+  <div class="player-card"><div class="player-name"><strong>Daryl Mitchell</strong></div><div class="player-role">Middle Order</div></div>
+  <div class="player-card"><div class="player-name"><strong>Glenn Phillips</strong></div><div class="player-role">Middle Order</div></div>
+  <div class="player-card"><div class="player-name"><strong>Mark Chapman</strong></div><div class="player-role">Middle Order</div></div>
+  <div class="player-card"><div class="player-name"><strong>Will Young</strong></div><div class="player-role">Opener</div></div>
+  <div class="player-card"><div class="player-name"><strong>Rachin Ravindra</strong></div><div class="player-role">Allrounder</div></div>
+  <div class="player-card"><div class="player-name"><strong>Mitchell Santner</strong></div><div class="player-role">Allrounder/Spinner</div></div>
+  <div class="player-card"><div class="player-name"><strong>Trent Boult</strong></div><div class="player-role">Fast Bowler</div></div>
+  <div class="player-card"><div class="player-name"><strong>Tim Southee</strong></div><div class="player-role">Fast Bowler</div></div>
+  <div class="player-card"><div class="player-name"><strong>Lockie Ferguson</strong></div><div class="player-role">Fast Bowler</div></div>
+  <div class="player-card"><div class="player-name"><strong>Matt Henry</strong></div><div class="player-role">Fast Bowler</div></div>
+  <div class="player-card"><div class="player-name"><strong>Adam Milne</strong></div><div class="player-role">Fast Bowler</div></div>
+</div>
 
-        <div class="news-item">
-            <span class="news-headline">Matt Henry’s last-over heroics seal tri-series win</span><br>
-            <span class="news-date">August 4, 2025</span><br>
-            Matt Henry delivered under pressure, defending just seven runs against South Africa in the T20 tri-series final, ensuring New Zealand’s unbeaten run and clinching the title[web:63][web:64].
-        </div>
+<!-- Test Squad -->
+<h2>Current Test Squad</h2>
+<div class="squad-list">
+  <div class="player-card"><div class="player-name"><strong>Kane Williamson</strong> (Captain)</div><div class="player-role">Batsman</div></div>
+  <div class="player-card"><div class="player-name"><strong>Devon Conway</strong></div><div class="player-role">Opener</div></div>
+  <div class="player-card"><div class="player-name"><strong>Tom Latham</strong></div><div class="player-role">Opener/Wicketkeeper</div></div>
+  <div class="player-card"><div class="player-name"><strong>Daryl Mitchell</strong></div><div class="player-role">Middle Order</div></div>
+  <div class="player-card"><div class="player-name"><strong>Will Young</strong></div><div class="player-role">Opener</div></div>
+  <div class="player-card"><div class="player-name"><strong>Rachin Ravindra</strong></div><div class="player-role">Allrounder</div></div>
+  <div class="player-card"><div class="player-name"><strong>Henry Nicholls</strong></div><div class="player-role">Middle Order</div></div>
+  <div class="player-card"><div class="player-name"><strong>Mitchell Santner</strong></div><div class="player-role">Allrounder/Spinner</div></div>
+  <div class="player-card"><div class="player-name"><strong>Trent Boult</strong></div><div class="player-role">Fast Bowler</div></div>
+  <div class="player-card"><div class="player-name"><strong>Tim Southee</strong></div><div class="player-role">Fast Bowler</div></div>
+  <div class="player-card"><div class="player-name"><strong>Lockie Ferguson</strong></div><div class="player-role">Fast Bowler</div></div>
+  <div class="player-card"><div class="player-name"><strong>Matt Henry</strong></div><div class="player-role">Fast Bowler</div></div>
+  <div class="player-card"><div class="player-name"><strong>Ajaz Patel</strong></div><div class="player-role">Spinner</div></div>
+</div>
 
-        <div class="news-item">
-            <span class="news-headline">Devon Conway reaches 2,000 Test runs milestone</span><br>
-            <span class="news-date">August 7, 2025</span><br>
-            Opener Devon Conway crossed the 2,000-run mark in Test cricket, with a superb half-century to help New Zealand take command in Bulawayo[web:66].
-        </div>
+<!-- T20I Squad -->
+<h2>Current T20I Squad</h2>
+<div class="squad-list">
+  <div class="player-card"><div class="player-name"><strong>Mitchell Santner</strong> (Captain)</div><div class="player-role">Allrounder/Spinner</div></div>
+  <div class="player-card"><div class="player-name"><strong>Tim Seifert</strong></div><div class="player-role">Opener/Wicketkeeper</div></div>
+  <div class="player-card"><div class="player-name"><strong>Finn Allen</strong></div><div class="player-role">Opener</div></div>
+  <div class="player-card"><div class="player-name"><strong>Devon Conway</strong></div><div class="player-role">Opener/Wicketkeeper</div></div>
+  <div class="player-card"><div class="player-name"><strong>Mark Chapman</strong></div><div class="player-role">Middle Order</div></div>
+  <div class="player-card"><div class="player-name"><strong>Glenn Phillips</strong></div><div class="player-role">Batsman</div></div>
+  <div class="player-card"><div class="player-name"><strong>Rachin Ravindra</strong></div><div class="player-role">Allrounder</div></div>
+  <div class="player-card"><div class="player-name"><strong>Daryl Mitchell</strong></div><div class="player-role">Allrounder</div></div>
+  <div class="player-card"><div class="player-name"><strong>Adam Milne</strong></div><div class="player-role">Fast Bowler</div></div>
+  <div class="player-card"><div class="player-name"><strong>Lockie Ferguson</strong></div><div class="player-role">Fast Bowler</div></div>
+  <div class="player-card"><div class="player-name"><strong>Matt Henry</strong></div><div class="player-role">Fast Bowler</div></div>
+  <div class="player-card"><div class="player-name"><strong>Tim Southee</strong></div><div class="player-role">Fast Bowler</div></div>
+  <div class="player-card"><div class="player-name"><strong>Ajaz Patel</strong></div><div class="player-role">Spinner</div></div>
+</div>
 
-        <div class="news-item">
-            <span class="news-headline">Plunket Shield celebrates centenary season</span><br>
-            <span class="news-date">August 20, 2025</span><br>
-            New Zealand’s historic domestic competition, the Plunket Shield, marks its 100th season in 2025, with fresh talent set to emerge through its ranks[web:61][web:65].
-        </div>
+<!-- Star Players Table -->
+<h2>Star Players (All-Time)</h2>
+<table class="star-players" style="font-size:1.05em;">
+  <tr>
+    <th>Player</th>
+    <th>Format</th>
+    <th style="font-size:1.2em; color:#141414;">Achievements</th>
+  </tr>
+  <tr>
+    <td><b>Kane Williamson</b></td>
+    <td>Test/ODI/T20I</td>
+    <td style="font-size:1.15em;font-weight:bold;color:#bfc7d5;">World Test Champion, batting legend</td>
+  </tr>
+  <tr>
+    <td><b>Brendon McCullum</b></td>
+    <td>Test/ODI/T20I</td>
+    <td style="font-size:1.15em;font-weight:bold;color:#bfc7d5;">Explosive opener, iconic captain</td>
+  </tr>
+  <tr>
+    <td><b>Martin Crowe</b></td>
+    <td>Test/ODI</td>
+    <td style="font-size:1.15em;font-weight:bold;color:#bfc7d5;">Batting great of 80s/90s</td>
+  </tr>
+  <tr>
+    <td><b>Daniel Vettori</b></td>
+    <td>Test/ODI</td>
+    <td style="font-size:1.15em;font-weight:bold;color:#bfc7d5;">Legendary left-arm spinner</td>
+  </tr>
+  <tr>
+    <td><b>Stephen Fleming</b></td>
+    <td>Test/ODI</td>
+    <td style="font-size:1.15em;font-weight:bold;color:#bfc7d5;">Captain & tactician</td>
+  </tr>
+  <tr>
+    <td><b>Richard Hadlee</b></td>
+    <td>Test/ODI</td>
+    <td style="font-size:1.15em;font-weight:bold;color:#bfc7d5;">Fast bowling legend</td>
+  </tr>
+  <tr>
+    <td><b>Ross Taylor</b></td>
+    <td>Test/ODI/T20I</td>
+    <td style="font-size:1.15em;font-weight:bold;color:#bfc7d5;">Consistent run scorer</td>
+  </tr>
+  <tr>
+    <td><b>Tim Southee</b></td>
+    <td>Test/ODI/T20I</td>
+    <td style="font-size:1.15em;font-weight:bold;color:#bfc7d5;">Modern pace hero</td>
+  </tr>
+  <tr>
+    <td><b>Trent Boult</b></td>
+    <td>Test/ODI/T20I</td>
+    <td style="font-size:1.15em;font-weight:bold;color:#bfc7d5;">Swing bowling expert</td>
+  </tr>
+  <tr>
+    <td><b>Tom Latham</b></td>
+    <td>Test/ODI</td>
+    <td style="font-size:1.15em;font-weight:bold;color:#bfc7d5;">Reliable opener, keeper</td>
+  </tr>
+</table>
 
-        <div class="news-item">
-            <span class="news-headline">Injury concerns for Will O’Rourke and Nathan Smith</span><br>
-            <span class="news-date">August 6, 2025</span><br>
-            Pacers Will O’Rourke and Nathan Smith have been ruled out of the ongoing Zimbabwe Test series with back and abdominal injuries, prompting squad reshuffles[web:65][web:66].
-        </div>
-    </div>
 </body>
 </html>
+
 
