@@ -43,48 +43,247 @@
             font-size: 0.95em;
         }
     </style>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background: #f8faff;
+  margin: 0;
+  padding: 0;
+}
+
+.news-list h2, h2 {
+  color: #1560bd;
+  margin-top: 28px;
+  letter-spacing: 1px;
+}
+.news-list {
+  margin-bottom: 28px;
+}
+.news-item {
+  background: #eaf1fb;
+  margin-bottom: 13px;
+  padding: 12px 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px #eee;
+}
+.news-title {
+  font-weight: bold;
+  color: #1560bd;
+  text-decoration: none;
+  font-size: 1.12em;
+}
+.news-summary {
+  color: #28709e;
+  font-size: 1em;
+}
+
+.squad-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 30px;
+}
+.player-card {
+  background: #edf6fd;
+  border: 1px solid #bedcf4;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px #e8e8ee;
+  padding: 13px 18px;
+  min-width: 150px;
+  margin-bottom: 13px;
+  transition: box-shadow .2s;
+}
+.player-card:hover {
+  box-shadow: 0 8px 24px #c7e2ff;
+}
+.player-name {
+  font-size: 1.15em;
+  font-weight: bold;
+  color: #10255c;
+  margin-bottom: 4px;
+  letter-spacing: .3px;
+}
+.player-role {
+  color: #2484a1;
+  font-size: .97em;
+}
+
+.star-players {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 16px;
+  font-size: 1.07em;
+  background: #f5fbff;
+  box-shadow: 0 2px 10px #eaf1fb;
+  border-radius: 7px;
+  overflow: hidden;
+}
+.star-players th, .star-players td {
+  border: 1.5px solid #bedcf4;
+  padding: 8px 16px;
+  text-align: left;
+}
+.star-players th {
+  background: #1560bd;
+  color: #fff;
+  font-size: 1.12em;
+  font-weight: bold;
+}
+.star-players td {
+  font-size: 1.11em;
+}
+.star-players td[style] {
+  font-size: 1.16em !important;
+  color: #1768b2 !important;
+  font-weight: bold;
+}
+</style>
 </head>
 <body>
-    <div class="header">Afghanistan Cricket Team</div>
-    <div class="container">
-        <div class="section-title">Latest News</div>
+    <!-- Deep teal/red heading bar for Afghanistan -->
+<div style="background:#2F4858; color:#E50914; padding:16px 0; text-align:center; font-size:2em; font-weight:bold; letter-spacing:1px; margin-bottom:22px; border-radius:8px;">
+  Afghanistan Cricket Team
+</div>
 
-        <div class="news-item">
-            <span class="news-headline">Afghanistan Announces Squad for Asia Cup 2025</span><br>
-            <span class="news-date">August 24, 2025</span><br>
-            Rashid Khan leads a squad mixing seasoned stars with new talent for the Asia Cup in UAE. Naveen-ul-Haq returns to the side, while spin remains Afghanistan’s strength with Mujeeb, Noor Ahmad, Nabi, and rookie Allah Ghazanfar[web:44][web:48][web:50].
-        </div>
+<!-- Latest News -->
+<div class="news-list">
+  <h2>Latest News</h2>
+  <div class="news-item">
+    <a href="#" class="news-title">Hashmatullah Shahidi captains Afghanistan ODI and Test teams</a>
+    <div class="news-summary">Shahidi leads Afghanistan for upcoming World Cup qualifiers and home series.</div>
+  </div>
+  <div class="news-item">
+    <a href="#" class="news-title">Rashid Khan to captain T20I squad for Asia Cup 2025</a>
+    <div class="news-summary">Afghanistan's superstar spinner returns as captain for Asia Cup in UAE.</div>
+  </div>
+  <div class="news-item">
+    <a href="#" class="news-title">Rahmanullah Gurbaz shines as opener in T20 matches</a>
+    <div class="news-summary">Gurbaz continues fantastic form in recent T20 series victories.</div>
+  </div>
+  <div class="news-item">
+    <a href="#" class="news-title">Naveen-ul-Haq leads pace attack in ODI series</a>
+    <div class="news-summary">Naveen delivers key spells, picking up wickets against Bangladesh and Pakistan.</div>
+  </div>
+  <div class="news-item">
+    <a href="#" class="news-title">Mohammad Nabi stars as allrounder vs Zimbabwe</a>
+    <div class="news-summary">Veteran Nabi shows experience with runs and wickets in tough matches.</div>
+  </div>
+  <div class="news-item">
+    <a href="#" class="news-title">Noor Ahmad impresses on Test debut vs Sri Lanka</a>
+    <div class="news-summary">Young spinner Noor Ahmad makes headlines with 7-wicket haul.</div>
+  </div>
+</div>
 
-        <div class="news-item">
-            <span class="news-headline">Asia Cup 2025 Campaign Begins September 9</span><br>
-            <span class="news-date">August 23, 2025</span><br>
-            Afghanistan will open their Asia Cup T20 campaign against Hong Kong in Abu Dhabi. They are grouped with Bangladesh, Sri Lanka, and Hong Kong, aiming to repeat their impressive showings in big tournaments[web:48].
-        </div>
+<!-- ODI Squad -->
+<h2>Current ODI Squad</h2>
+<div class="squad-list">
+  <div class="player-card"><div class="player-name"><strong>Hashmatullah Shahidi</strong> (Captain)</div><div class="player-role">Batsman</div></div>
+  <div class="player-card"><div class="player-name"><strong>Rahmanullah Gurbaz</strong></div><div class="player-role">Opener/Wicketkeeper</div></div>
+  <div class="player-card"><div class="player-name"><strong>Ibrahim Zadran</strong></div><div class="player-role">Opener</div></div>
+  <div class="player-card"><div class="player-name"><strong>Riaz Hassan</strong></div><div class="player-role">Batsman</div></div>
+  <div class="player-card"><div class="player-name"><strong>Najibullah Zadran</strong></div><div class="player-role">Middle Order</div></div>
+  <div class="player-card"><div class="player-name"><strong>Mohammad Nabi</strong></div><div class="player-role">Allrounder</div></div>
+  <div class="player-card"><div class="player-name"><strong>Azmatullah Omarzai</strong></div><div class="player-role">Allrounder</div></div>
+  <div class="player-card"><div class="player-name"><strong>Rashid Khan</strong></div><div class="player-role">Spinner/Allrounder</div></div>
+  <div class="player-card"><div class="player-name"><strong>Mujeeb Ur Rahman</strong></div><div class="player-role">Spinner</div></div>
+  <div class="player-card"><div class="player-name"><strong>Naveen-ul-Haq</strong></div><div class="player-role">Fast Bowler</div></div>
+  <div class="player-card"><div class="player-name"><strong>Fazalhaq Farooqi</strong></div><div class="player-role">Fast Bowler</div></div>
+  <div class="player-card"><div class="player-name"><strong>Noor Ahmad</strong></div><div class="player-role">Spinner</div></div>
+  <div class="player-card"><div class="player-name"><strong>Qais Ahmad</strong></div><div class="player-role">Spinner</div></div>
+</div>
 
-        <div class="news-item">
-            <span class="news-headline">Tri-Series with UAE and Pakistan Before Asia Cup</span><br>
-            <span class="news-date">August 23, 2025</span><br>
-            Ahead of the Asia Cup, Afghanistan will play a T20I tri-series with UAE and Pakistan starting August 29 in Sharjah, providing valuable preparation before the main continental event[web:44][web:50].
-        </div>
+<!-- Test Squad -->
+<h2>Current Test Squad</h2>
+<div class="squad-list">
+  <div class="player-card"><div class="player-name"><strong>Hashmatullah Shahidi</strong> (Captain)</div><div class="player-role">Batsman</div></div>
+  <div class="player-card"><div class="player-name"><strong>Rahmat Shah</strong></div><div class="player-role">Batsman</div></div>
+  <div class="player-card"><div class="player-name"><strong>Ibrahim Zadran</strong></div><div class="player-role">Opener</div></div>
+  <div class="player-card"><div class="player-name"><strong>Nasir Jamal</strong></div><div class="player-role">Middle Order</div></div>
+  <div class="player-card"><div class="player-name"><strong>Afghan Mohammad Nabi</strong></div><div class="player-role">Allrounder</div></div>
+  <div class="player-card"><div class="player-name"><strong>Ikram Alikhil</strong></div><div class="player-role">Wicketkeeper-Batsman</div></div>
+  <div class="player-card"><div class="player-name"><strong>Rashid Khan</strong></div><div class="player-role">Spinner</div></div>
+  <div class="player-card"><div class="player-name"><strong>Mujeeb Ur Rahman</strong></div><div class="player-role">Spinner</div></div>
+  <div class="player-card"><div class="player-name"><strong>Fazalhaq Farooqi</strong></div><div class="player-role">Fast Bowler</div></div>
+  <div class="player-card"><div class="player-name"><strong>Noor Ahmad</strong></div><div class="player-role">Spinner</div></div>
+</div>
 
-        <div class="news-item">
-            <span class="news-headline">Fazalhaq Farooqi Returns as Key Bowler</span><br>
-            <span class="news-date">August 23, 2025</span><br>
-            Star left-arm quick Fazalhaq Farooqi, joint highest wicket-taker in the 2024 T20 World Cup, strengthens Afghanistan’s pace attack for the Asia Cup, supported by Naveen-ul-Haq and Farid Malik[web:47][web:48].
-        </div>
+<!-- T20I Squad -->
+<h2>Current T20I Squad</h2>
+<div class="squad-list">
+  <div class="player-card"><div class="player-name"><strong>Rashid Khan</strong> (Captain)</div><div class="player-role">Spinner/Allrounder</div></div>
+  <div class="player-card"><div class="player-name"><strong>Rahmanullah Gurbaz</strong></div><div class="player-role">Opener/Wicketkeeper</div></div>
+  <div class="player-card"><div class="player-name"><strong>Ibrahim Zadran</strong></div><div class="player-role">Opener</div></div>
+  <div class="player-card"><div class="player-name"><strong>Najibullah Zadran</strong></div><div class="player-role">Batsman</div></div>
+  <div class="player-card"><div class="player-name"><strong>Mohammad Nabi</strong></div><div class="player-role">Allrounder</div></div>
+  <div class="player-card"><div class="player-name"><strong>Karim Janat</strong></div><div class="player-role">Allrounder</div></div>
+  <div class="player-card"><div class="player-name"><strong>Azmatullah Omarzai</strong></div><div class="player-role">Bowling Allrounder</div></div>
+  <div class="player-card"><div class="player-name"><strong>Mujeeb Ur Rahman</strong></div><div class="player-role">Spinner</div></div>
+  <div class="player-card"><div class="player-name"><strong>Noor Ahmad</strong></div><div class="player-role">Spinner</div></div>
+  <div class="player-card"><div class="player-name"><strong>Naveen-ul-Haq</strong></div><div class="player-role">Fast Bowler</div></div>
+  <div class="player-card"><div class="player-name"><strong>Fareed Ahmad</strong></div><div class="player-role">Fast Bowler</div></div>
+  <div class="player-card"><div class="player-name"><strong>Fazalhaq Farooqi</strong></div><div class="player-role">Fast Bowler</div></div>
+</div>
 
-        <div class="news-item">
-            <span class="news-headline">Young Talents Boost Afghanistan Lineup</span><br>
-            <span class="news-date">August 24, 2025</span><br>
-            Emerging stars like Sediqullah Atal, Azmatullah Omarzai, and Mohammad Ishaq have been included after strong recent performances in domestic and youth tournaments, reflecting Afghanistan's focus on future talent[web:44][web:50].
-        </div>
-
-        <div class="news-item">
-            <span class="news-headline">Afghanistan Set for Post-Asia Cup Series vs Bangladesh</span><br>
-            <span class="news-date">August 24, 2025</span><br>
-            After the Asia Cup, Afghanistan will host Bangladesh in a white-ball series in the UAE, featuring three T20Is and three ODIs in October, continuing a packed schedule for Rashid Khan’s team[web:51].
-        </div>
-    </div>
+<!-- Star Players Table -->
+<h2>Star Players (All-Time)</h2>
+<table class="star-players" style="font-size:1.05em;">
+  <tr>
+    <th>Player</th>
+    <th>Format</th>
+    <th style="font-size:1.2em; color:#2F4858;">Achievements</th>
+  </tr>
+  <tr>
+    <td><b>Mohammad Nabi</b></td>
+    <td>All Formats</td>
+    <td style="font-size:1.15em;font-weight:bold;color:#E50914;">Legendary all-rounder, Afghanistan's backbone</td>
+  </tr>
+  <tr>
+    <td><b>Rashid Khan</b></td>
+    <td>All Formats</td>
+    <td style="font-size:1.15em;font-weight:bold;color:#E50914;">World T20 superstar, fastest to 100 ODI wickets</td>
+  </tr>
+  <tr>
+    <td><b>Asghar Afghan</b></td>
+    <td>Test/ODI/T20I</td>
+    <td style="font-size:1.15em;font-weight:bold;color:#E50914;">Inspirational captain, batting leader</td>
+  </tr>
+  <tr>
+    <td><b>Mohammad Shahzad</b></td>
+    <td>ODI/T20I</td>
+    <td style="font-size:1.15em;font-weight:bold;color:#E50914;">Explosive opener, record keeper</td>
+  </tr>
+  <tr>
+    <td><b>Gulbadin Naib</b></td>
+    <td>ODI/T20I</td>
+    <td style="font-size:1.15em;font-weight:bold;color:#E50914;">2019 World Cup captain, allrounder</td>
+  </tr>
+  <tr>
+    <td><b>Najibullah Zadran</b></td>
+    <td>ODI/T20I</td>
+    <td style="font-size:1.15em;font-weight:bold;color:#E50914;">Middle-order match finisher</td>
+  </tr>
+  <tr>
+    <td><b>Hamid Hassan</b></td>
+    <td>ODI/T20I</td>
+    <td style="font-size:1.15em;font-weight:bold;color:#E50914;">First Afghan pace star</td>
+  </tr>
+  <tr>
+    <td><b>Mujeeb Ur Rahman</b></td>
+    <td>All Formats</td>
+    <td style="font-size:1.15em;font-weight:bold;color:#E50914;">Young mystery spinner</td>
+  </tr>
+  <tr>
+    <td><b>Noor Ahmad</b></td>
+    <td>Test/T20I</td>
+    <td style="font-size:1.15em;font-weight:bold;color:#E50914;">Teen spin sensation</td>
+  </tr>
+  <tr>
+    <td><b>Rahmat Shah</b></td>
+    <td>Test/ODI</td>
+    <td style="font-size:1.15em;font-weight:bold;color:#E50914;">First Test centurion</td>
+  </tr>
+</table>
 </body>
 </html>
+
 
