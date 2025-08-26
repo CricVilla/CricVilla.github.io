@@ -41,47 +41,248 @@
             font-size: 0.95em;
         }
     </style>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background: #f8faff;
+  margin: 0;
+  padding: 0;
+}
+
+.news-list h2, h2 {
+  color: #1560bd;
+  margin-top: 28px;
+  letter-spacing: 1px;
+}
+.news-list {
+  margin-bottom: 28px;
+}
+.news-item {
+  background: #eaf1fb;
+  margin-bottom: 13px;
+  padding: 12px 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px #eee;
+}
+.news-title {
+  font-weight: bold;
+  color: #1560bd;
+  text-decoration: none;
+  font-size: 1.12em;
+}
+.news-summary {
+  color: #28709e;
+  font-size: 1em;
+}
+
+.squad-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 30px;
+}
+.player-card {
+  background: #edf6fd;
+  border: 1px solid #bedcf4;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px #e8e8ee;
+  padding: 13px 18px;
+  min-width: 150px;
+  margin-bottom: 13px;
+  transition: box-shadow .2s;
+}
+.player-card:hover {
+  box-shadow: 0 8px 24px #c7e2ff;
+}
+.player-name {
+  font-size: 1.15em;
+  font-weight: bold;
+  color: #10255c;
+  margin-bottom: 4px;
+  letter-spacing: .3px;
+}
+.player-role {
+  color: #2484a1;
+  font-size: .97em;
+}
+
+.star-players {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 16px;
+  font-size: 1.07em;
+  background: #f5fbff;
+  box-shadow: 0 2px 10px #eaf1fb;
+  border-radius: 7px;
+  overflow: hidden;
+}
+.star-players th, .star-players td {
+  border: 1.5px solid #bedcf4;
+  padding: 8px 16px;
+  text-align: left;
+}
+.star-players th {
+  background: #1560bd;
+  color: #fff;
+  font-size: 1.12em;
+  font-weight: bold;
+}
+.star-players td {
+  font-size: 1.11em;
+}
+.star-players td[style] {
+  font-size: 1.16em !important;
+  color: #1768b2 !important;
+  font-weight: bold;
+}
+</style>
 </head>
 <body>
-    <div class="header">West Indies Cricket Team</div>
-    <div class="container">
-        <div class="section-title">Latest News</div>
+<!-- Maroon/gold heading bar for West Indies -->
+<div style="background:#7a263a; color:#ffbe3d; padding:16px 0; text-align:center; font-size:2em; font-weight:bold; letter-spacing:1px; margin-bottom:22px; border-radius:8px;">
+  West Indies Cricket Team
+</div>
 
-        <div class="news-item">
-            <span class="news-headline">West Indies Clinch ODI Series Against Pakistan</span><br>
-            <span class="news-date">August 12, 2025</span><br>
-            West Indies defeated Pakistan by 5 wickets in the decisive ODI at Tarouba, winning the series 2-1. Roston Chase and Justin Greaves led the run chase on a tricky pitch, ending a run of home series losses[web:56][web:60].
-        </div>
+<!-- Latest News -->
+<div class="news-list">
+  <h2>Latest News</h2>
+  <div class="news-item">
+    <a href="#" class="news-title">Shai Hope named captain for ODI and T20I teams</a>
+    <div class="news-summary">Hope leads the Windies in white-ball cricket for 2025 Asia Cup and home series.</div>
+  </div>
+  <div class="news-item">
+    <a href="#" class="news-title">Kraigg Brathwaite resumes as Test team captain</a>
+    <div class="news-summary">Brathwaite leads the side into regional Championship season and ICC fixtures.</div>
+  </div>
+  <div class="news-item">
+    <a href="#" class="news-title">Akeal Hosein shines as Windies top spinner</a>
+    <div class="news-summary">Hosein delivers match-winning spells in West Indies' T20 campaign.</div>
+  </div>
+  <div class="news-item">
+    <a href="#" class="news-title">Brandon King powers Windies to T20 wins</a>
+    <div class="news-summary">King dominates opposition bowlers to help the team clinch victories.</div>
+  </div>
+  <div class="news-item">
+    <a href="#" class="news-title">Alzarri Joseph stars in Test series against Bangladesh</a>
+    <div class="news-summary">Joseph leads the Windies pace attack with nine wickets in the series.</div>
+  </div>
+  <div class="news-item">
+    <a href="#" class="news-title">Kyle Mayers returns with all-round heroics</a>
+    <div class="news-summary">Mayers scores runs and takes wickets in Caribbean Premier League.</div>
+  </div>
+</div>
 
-        <div class="news-item">
-            <span class="news-headline">Romario Shepherd Returns; Young Talent in Squad</span><br>
-            <span class="news-date">August 5, 2025</span><br>
-            Shai Hope leads a 15-member ODI squad for the series against Pakistan in Trinidad, with all-rounder Romario Shepherd making his comeback and 18-year-old Jewel Andrew retaining his spot after a strong debut summer[web:57].
-        </div>
+<!-- ODI Squad -->
+<h2>Current ODI Squad</h2>
+<div class="squad-list">
+  <div class="player-card"><div class="player-name"><strong>Shai Hope</strong> (Captain)</div><div class="player-role">Wicketkeeper-Batsman</div></div>
+  <div class="player-card"><div class="player-name"><strong>Brandon King</strong></div><div class="player-role">Opener</div></div>
+  <div class="player-card"><div class="player-name"><strong>Alick Athanaze</strong></div><div class="player-role">Batsman</div></div>
+  <div class="player-card"><div class="player-name"><strong>Keacy Carty</strong></div><div class="player-role">Middle Order</div></div>
+  <div class="player-card"><div class="player-name"><strong>Shimron Hetmyer</strong></div><div class="player-role">Middle Order</div></div>
+  <div class="player-card"><div class="player-name"><strong>Romario Shepherd</strong></div><div class="player-role">Allrounder</div></div>
+  <div class="player-card"><div class="player-name"><strong>Rovman Powell</strong></div><div class="player-role">Allrounder</div></div>
+  <div class="player-card"><div class="player-name"><strong>Kyle Mayers</strong></div><div class="player-role">Allrounder</div></div>
+  <div class="player-card"><div class="player-name"><strong>Gudakesh Motie</strong></div><div class="player-role">Spinner</div></div>
+  <div class="player-card"><div class="player-name"><strong>Akeal Hosein</strong></div><div class="player-role">Spinner</div></div>
+  <div class="player-card"><div class="player-name"><strong>Alzarri Joseph</strong></div><div class="player-role">Fast Bowler</div></div>
+  <div class="player-card"><div class="player-name"><strong>Oshane Thomas</strong></div><div class="player-role">Fast Bowler</div></div>
+  <div class="player-card"><div class="player-name"><strong>Yannic Cariah</strong></div><div class="player-role">Allrounder</div></div>
+</div>
 
-        <div class="news-item">
-            <span class="news-headline">Holder’s All-Round Show Ends Losing Streak</span><br>
-            <span class="news-date">August 8, 2025</span><br>
-            Jason Holder delivered stellar batting and bowling in the second T20I to help West Indies snap their winless streak, boosting confidence ahead of major events[web:53].
-        </div>
+<!-- Test Squad -->
+<h2>Current Test Squad</h2>
+<div class="squad-list">
+  <div class="player-card"><div class="player-name"><strong>Kraigg Brathwaite</strong> (Captain)</div><div class="player-role">Opener</div></div>
+  <div class="player-card"><div class="player-name"><strong>John Campbell</strong></div><div class="player-role">Opener</div></div>
+  <div class="player-card"><div class="player-name"><strong>Tagenarine Chanderpaul</strong></div><div class="player-role">Opener</div></div>
+  <div class="player-card"><div class="player-name"><strong>Kyle Mayers</strong></div><div class="player-role">Allrounder</div></div>
+  <div class="player-card"><div class="player-name"><strong>Jermaine Blackwood</strong></div><div class="player-role">Middle Order</div></div>
+  <div class="player-card"><div class="player-name"><strong>Joshua Da Silva</strong></div><div class="player-role">Wicketkeeper-Batsman</div></div>
+  <div class="player-card"><div class="player-name"><strong>Jason Holder</strong></div><div class="player-role">Allrounder</div></div>
+  <div class="player-card"><div class="player-name"><strong>Gudakesh Motie</strong></div><div class="player-role">Spinner</div></div>
+  <div class="player-card"><div class="player-name"><strong>Alzarri Joseph</strong></div><div class="player-role">Fast Bowler</div></div>
+  <div class="player-card"><div class="player-name"><strong>Shannon Gabriel</strong></div><div class="player-role">Fast Bowler</div></div>
+  <div class="player-card"><div class="player-name"><strong>Kemar Roach</strong></div><div class="player-role">Fast Bowler</div></div>
+  <div class="player-card"><div class="player-name"><strong>Nkrumah Bonner</strong></div><div class="player-role">Middle Order</div></div>
+</div>
 
-        <div class="news-item">
-            <span class="news-headline">West Indies Women Step Up Preparations</span><br>
-            <span class="news-date">August 2025</span><br>
-            The West Indies women's squad intensifies training in Antigua and Chennai as they prepare for upcoming international and regional competitions[web:55].
-        </div>
+<!-- T20I Squad -->
+<h2>Current T20I Squad</h2>
+<div class="squad-list">
+  <div class="player-card"><div class="player-name"><strong>Rovman Powell</strong> (Captain)</div><div class="player-role">Allrounder</div></div>
+  <div class="player-card"><div class="player-name"><strong>Brandon King</strong></div><div class="player-role">Opener</div></div>
+  <div class="player-card"><div class="player-name"><strong>Kyle Mayers</strong></div><div class="player-role">Allrounder</div></div>
+  <div class="player-card"><div class="player-name"><strong>Shimron Hetmyer</strong></div><div class="player-role">Batsman</div></div>
+  <div class="player-card"><div class="player-name"><strong>Romario Shepherd</strong></div><div class="player-role">Allrounder</div></div>
+  <div class="player-card"><div class="player-name"><strong>Akeal Hosein</strong></div><div class="player-role">Spinner</div></div>
+  <div class="player-card"><div class="player-name"><strong>Johnson Charles</strong></div><div class="player-role">Wicketkeeper-Batsman</div></div>
+  <div class="player-card"><div class="player-name"><strong>Odean Smith</strong></div><div class="player-role">Allrounder</div></div>
+  <div class="player-card"><div class="player-name"><strong>Obed McCoy</strong></div><div class="player-role">Fast Bowler</div></div>
+  <div class="player-card"><div class="player-name"><strong>Shamar Joseph</strong></div><div class="player-role">Fast Bowler</div></div>
+  <div class="player-card"><div class="player-name"><strong>Alzarri Joseph</strong></div><div class="player-role">Fast Bowler</div></div>
+  <div class="player-card"><div class="player-name"><strong>Gudakesh Motie</strong></div><div class="player-role">Spinner</div></div>
+</div>
 
-        <div class="news-item">
-            <span class="news-headline">Rising Stars U-17 and U-19 Events Announced</span><br>
-            <span class="news-date">August 2025</span><br>
-            Cricket West Indies confirms new Under-17 and Under-19 white-ball championships as part of their youth strategy, with matches set across Trinidad and Guyana[web:55].
-        </div>
-
-        <div class="news-item">
-            <span class="news-headline">Cricket West Indies Summit Eyes Future Growth</span><br>
-            <span class="news-date">August 15, 2025</span><br>
-            Key actions have been identified to restore West Indies cricket’s global stature, focusing on team performance, youth development, and grassroots engagement[web:58].
-        </div>
-    </div>
+<!-- Star Players Table -->
+<h2>Star Players (All-Time)</h2>
+<table class="star-players" style="font-size:1.05em;">
+  <tr>
+    <th>Player</th>
+    <th>Format</th>
+    <th style="font-size:1.2em; color:#7a263a;">Achievements</th>
+  </tr>
+  <tr>
+    <td><b>Brian Lara</b></td>
+    <td>Test/ODI</td>
+    <td style="font-size:1.15em;font-weight:bold;color:#ffbe3d;">400 Test runs in a match, Windies legend</td>
+  </tr>
+  <tr>
+    <td><b>Chris Gayle</b></td>
+    <td>All Formats</td>
+    <td style="font-size:1.15em;font-weight:bold;color:#ffbe3d;">Most T20 centuries, WI six king</td>
+  </tr>
+  <tr>
+    <td><b>Curtly Ambrose</b></td>
+    <td>Test/ODI</td>
+    <td style="font-size:1.15em;font-weight:bold;color:#ffbe3d;">Legendary fast bowler</td>
+  </tr>
+  <tr>
+    <td><b>Sir Viv Richards</b></td>
+    <td>Test/ODI</td>
+    <td style="font-size:1.15em;font-weight:bold;color:#ffbe3d;">Explosive batsman, captain</td>
+  </tr>
+  <tr>
+    <td><b>Clive Lloyd</b></td>
+    <td>Test/ODI</td>
+    <td style="font-size:1.15em;font-weight:bold;color:#ffbe3d;">1975, 1979 World Cup winning captain</td>
+  </tr>
+  <tr>
+    <td><b>Malcolm Marshall</b></td>
+    <td>Test/ODI</td>
+    <td style="font-size:1.15em;font-weight:bold;color:#ffbe3d;">Fast bowling legend</td>
+  </tr>
+  <tr>
+    <td><b>Shivnarine Chanderpaul</b></td>
+    <td>Test/ODI</td>
+    <td style="font-size:1.15em;font-weight:bold;color:#ffbe3d;">WI run accumulator</td>
+  </tr>
+  <tr>
+    <td><b>Michael Holding</b></td>
+    <td>Test/ODI</td>
+    <td style="font-size:1.15em;font-weight:bold;color:#ffbe3d;">'Whispering Death' bowler</td>
+  </tr>
+  <tr>
+    <td><b>Ramnaresh Sarwan</b></td>
+    <td>Test/ODI</td>
+    <td style="font-size:1.15em;font-weight:bold;color:#ffbe3d;">Batting star</td>
+  </tr>
+  <tr>
+    <td><b>Carl Hooper</b></td>
+    <td>Test/ODI</td>
+    <td style="font-size:1.15em;font-weight:bold;color:#ffbe3d;">All-round hero</td>
+  </tr>
+        </table>
 </body>
 </html>
+
