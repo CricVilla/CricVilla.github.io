@@ -43,48 +43,251 @@
             font-size: 0.95em;
         }
     </style>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background: #f8faff;
+  margin: 0;
+  padding: 0;
+}
+
+.news-list h2, h2 {
+  color: #1560bd;
+  margin-top: 28px;
+  letter-spacing: 1px;
+}
+.news-list {
+  margin-bottom: 28px;
+}
+.news-item {
+  background: #eaf1fb;
+  margin-bottom: 13px;
+  padding: 12px 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px #eee;
+}
+.news-title {
+  font-weight: bold;
+  color: #1560bd;
+  text-decoration: none;
+  font-size: 1.12em;
+}
+.news-summary {
+  color: #28709e;
+  font-size: 1em;
+}
+
+.squad-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 30px;
+}
+.player-card {
+  background: #edf6fd;
+  border: 1px solid #bedcf4;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px #e8e8ee;
+  padding: 13px 18px;
+  min-width: 150px;
+  margin-bottom: 13px;
+  transition: box-shadow .2s;
+}
+.player-card:hover {
+  box-shadow: 0 8px 24px #c7e2ff;
+}
+.player-name {
+  font-size: 1.15em;
+  font-weight: bold;
+  color: #10255c;
+  margin-bottom: 4px;
+  letter-spacing: .3px;
+}
+.player-role {
+  color: #2484a1;
+  font-size: .97em;
+}
+
+.star-players {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 16px;
+  font-size: 1.07em;
+  background: #f5fbff;
+  box-shadow: 0 2px 10px #eaf1fb;
+  border-radius: 7px;
+  overflow: hidden;
+}
+.star-players th, .star-players td {
+  border: 1.5px solid #bedcf4;
+  padding: 8px 16px;
+  text-align: left;
+}
+.star-players th {
+  background: #1560bd;
+  color: #fff;
+  font-size: 1.12em;
+  font-weight: bold;
+}
+.star-players td {
+  font-size: 1.11em;
+}
+.star-players td[style] {
+  font-size: 1.16em !important;
+  color: #1768b2 !important;
+  font-weight: bold;
+}
+</style>
 </head>
 <body>
-    <div class="header">South Africa Cricket Team</div>
-    <div class="container">
-        <div class="section-title">Latest News</div>
+ <!-- Green/gold heading bar for South Africa -->
+<div style="background:#006647; color:#ffd84b; padding:16px 0; text-align:center; font-size:2em; font-weight:bold; letter-spacing:1px; margin-bottom:22px; border-radius:8px;">
+  South Africa Cricket Team
+</div>
 
-        <div class="news-item">
-            <span class="news-headline">South Africa struggles in ODI series against Australia</span><br>
-            <span class="news-date">August 24, 2025</span><br>
-            South Africa endured a tough outing in the third ODI in Australia, suffering a 276-run defeat amid record-setting performances from the hosts, as admitted by captain Temba Bavuma[web:74].
-        </div>
+<!-- Latest News -->
+<div class="news-list">
+  <h2>Latest News</h2>
+  <div class="news-item">
+    <a href="#" class="news-title">Temba Bavuma continues as Test and ODI captain</a>
+    <div class="news-summary">Bavuma leads the Proteas through important World Test Championship and ICC ODI events.</div>
+  </div>
+  <div class="news-item">
+    <a href="#" class="news-title">Aiden Markram named T20I captain for Asia Cup 2025</a>
+    <div class="news-summary">Markram guides the Proteas T20 side with David Miller as vice-captain in UAE.</div>
+  </div>
+  <div class="news-item">
+    <a href="#" class="news-title">Kagiso Rabada shines in Test series against New Zealand</a>
+    <div class="news-summary">Rabada takes six wickets in crucial victory for South Africa.</div>
+  </div>
+  <div class="news-item">
+    <a href="#" class="news-title">Quinton de Kock returns to ODI squad for Australia series</a>
+    <div class="news-summary">Star keeper-batsman rejoins after short T20 league break.</div>
+  </div>
+  <div class="news-item">
+    <a href="#" class="news-title">Marco Jansen stars in recent Test and ODI matches</a>
+    <div class="news-summary">Young all-rounder delivers with bat and ball against Pakistan.</div>
+  </div>
+  <div class="news-item">
+    <a href="#" class="news-title">Keshav Maharaj delivers match-winning spell in Asia Cup</a>
+    <div class="news-summary">Maharaj leads South Africa’s spin attack to a big win over Sri Lanka.</div>
+  </div>
+</div>
 
-        <div class="news-item">
-            <span class="news-headline">Ngidi’s five-wicket haul secures win</span><br>
-            <span class="news-date">August 22, 2025</span><br>
-            Lungi Ngidi picked up a career-best five for 42 to help South Africa beat Australia by 84 runs in the second ODI and clinch their fifth successive ODI series win against Australia[web:74].
-        </div>
+<!-- ODI Squad -->
+<h2>Current ODI Squad</h2>
+<div class="squad-list">
+  <div class="player-card"><div class="player-name"><strong>Temba Bavuma</strong> (Captain)</div><div class="player-role">Batsman</div></div>
+  <div class="player-card"><div class="player-name"><strong>Quinton de Kock</strong></div><div class="player-role">Wicketkeeper-Opener</div></div>
+  <div class="player-card"><div class="player-name"><strong>Aiden Markram</strong></div><div class="player-role">Allrounder</div></div>
+  <div class="player-card"><div class="player-name"><strong>Rassie van der Dussen</strong></div><div class="player-role">Batsman</div></div>
+  <div class="player-card"><div class="player-name"><strong>David Miller</strong></div><div class="player-role">Middle Order</div></div>
+  <div class="player-card"><div class="player-name"><strong>Heinrich Klaasen</strong></div><div class="player-role">Wicketkeeper-Batsman</div></div>
+  <div class="player-card"><div class="player-name"><strong>Marco Jansen</strong></div><div class="player-role">Allrounder</div></div>
+  <div class="player-card"><div class="player-name"><strong>Andile Phehlukwayo</strong></div><div class="player-role">Allrounder</div></div>
+  <div class="player-card"><div class="player-name"><strong>Keshav Maharaj</strong></div><div class="player-role">Spinner</div></div>
+  <div class="player-card"><div class="player-name"><strong>Kagiso Rabada</strong></div><div class="player-role">Fast Bowler</div></div>
+  <div class="player-card"><div class="player-name"><strong>Anrich Nortje</strong></div><div class="player-role">Fast Bowler</div></div>
+  <div class="player-card"><div class="player-name"><strong>Tabraiz Shamsi</strong></div><div class="player-role">Spinner</div></div>
+  <div class="player-card"><div class="player-name"><strong>Lungi Ngidi</strong></div><div class="player-role">Fast Bowler</div></div>
+  <div class="player-card"><div class="player-name"><strong>Reeza Hendricks</strong></div><div class="player-role">Opener</div></div>
+</div>
 
-        <div class="news-item">
-            <span class="news-headline">Breetzke equals ODI debut run record</span><br>
-            <span class="news-date">August 22, 2025</span><br>
-            Youngster Matthew Breetzke matched Navjot Sidhu's 38-year-old record for most runs in his first five ODIs, impressing during the series in Australia[web:74].
-        </div>
+<!-- Test Squad -->
+<h2>Current Test Squad</h2>
+<div class="squad-list">
+  <div class="player-card"><div class="player-name"><strong>Temba Bavuma</strong> (Captain)</div><div class="player-role">Batsman</div></div>
+  <div class="player-card"><div class="player-name"><strong>Aiden Markram</strong></div><div class="player-role">Opener</div></div>
+  <div class="player-card"><div class="player-name"><strong>Dean Elgar</strong></div><div class="player-role">Opener</div></div>
+  <div class="player-card"><div class="player-name"><strong>Rassie van der Dussen</strong></div><div class="player-role">Middle Order</div></div>
+  <div class="player-card"><div class="player-name"><strong>Keegan Petersen</strong></div><div class="player-role">Batsman</div></div>
+  <div class="player-card"><div class="player-name"><strong>David Bedingham</strong></div><div class="player-role">Batsman</div></div>
+  <div class="player-card"><div class="player-name"><strong>Kyle Verreynne</strong></div><div class="player-role">Wicketkeeper-Batsman</div></div>
+  <div class="player-card"><div class="player-name"><strong>Marco Jansen</strong></div><div class="player-role">Allrounder</div></div>
+  <div class="player-card"><div class="player-name"><strong>Keshav Maharaj</strong></div><div class="player-role">Spinner</div></div>
+  <div class="player-card"><div class="player-name"><strong>Kagiso Rabada</strong></div><div class="player-role">Fast Bowler</div></div>
+  <div class="player-card"><div class="player-name"><strong>Anrich Nortje</strong></div><div class="player-role">Fast Bowler</div></div>
+  <div class="player-card"><div class="player-name"><strong>Lungi Ngidi</strong></div><div class="player-role">Fast Bowler</div></div>
+  <div class="player-card"><div class="player-name"><strong>Simon Harmer</strong></div><div class="player-role">Spinner</div></div>
+</div>
 
-        <div class="news-item">
-            <span class="news-headline">Keshav Maharaj returns to T20I squad</span><br>
-            <span class="news-date">August 2025</span><br>
-            Left-arm spinner Keshav Maharaj has been recalled to South Africa’s T20I squad for the upcoming England tour, strengthening the bowling attack[web:74].
-        </div>
+<!-- T20I Squad -->
+<h2>Current T20I Squad</h2>
+<div class="squad-list">
+  <div class="player-card"><div class="player-name"><strong>Aiden Markram</strong> (Captain)</div><div class="player-role">Allrounder</div></div>
+  <div class="player-card"><div class="player-name"><strong>Reeza Hendricks</strong></div><div class="player-role">Opener</div></div>
+  <div class="player-card"><div class="player-name"><strong>Quinton de Kock</strong></div><div class="player-role">Wicketkeeper-Opener</div></div>
+  <div class="player-card"><div class="player-name"><strong>Tristan Stubbs</strong></div><div class="player-role">Batsman</div></div>
+  <div class="player-card"><div class="player-name"><strong>Rassie van der Dussen</strong></div><div class="player-role">Middle Order</div></div>
+  <div class="player-card"><div class="player-name"><strong>David Miller</strong></div><div class="player-role">Middle Order</div></div>
+  <div class="player-card"><div class="player-name"><strong>Heinrich Klaasen</strong></div><div class="player-role">Wicketkeeper-Batsman</div></div>
+  <div class="player-card"><div class="player-name"><strong>Marco Jansen</strong></div><div class="player-role">Allrounder</div></div>
+  <div class="player-card"><div class="player-name"><strong>Keshav Maharaj</strong></div><div class="player-role">Spinner</div></div>
+  <div class="player-card"><div class="player-name"><strong>Kagiso Rabada</strong></div><div class="player-role">Fast Bowler</div></div>
+  <div class="player-card"><div class="player-name"><strong>Anrich Nortje</strong></div><div class="player-role">Fast Bowler</div></div>
+  <div class="player-card"><div class="player-name"><strong>Tabraiz Shamsi</strong></div><div class="player-role">Spinner</div></div>
+</div>
 
-        <div class="news-item">
-            <span class="news-headline">Youth stars named for Zimbabwe tri-series</span><br>
-            <span class="news-date">August 2025</span><br>
-            Young guns Kwena Maphaka, Lhuan-dre Pretorius, and Nandre Burger have been selected for the Zimbabwe T20I tri-series, demonstrating South Africa’s investment in future talent[web:76].
-        </div>
-
-        <div class="news-item">
-            <span class="news-headline">South Africa clinches World Test Championship</span><br>
-            <span class="news-date">June 2025</span><br>
-            South Africa celebrated a historic victory, winning the World Test Championship final against Australia at Lord’s, marking their dominance in international Test cricket[web:75].
-        </div>
-    </div>
+<!-- Star Players Table -->
+<h2>Star Players (All-Time)</h2>
+<table class="star-players" style="font-size:1.05em;">
+  <tr>
+    <th>Player</th>
+    <th>Format</th>
+    <th style="font-size:1.2em; color:#006647;">Achievements</th>
+  </tr>
+  <tr>
+    <td><b>Jacques Kallis</b></td>
+    <td>Test/ODI</td>
+    <td style="font-size:1.15em;font-weight:bold;color:#ffd84b;">Greatest allrounder, over 25,500 runs</td>
+  </tr>
+  <tr>
+    <td><b>AB de Villiers</b></td>
+    <td>Test/ODI/T20I</td>
+    <td style="font-size:1.15em;font-weight:bold;color:#ffd84b;">Mr. 360, fastest ODI century</td>
+  </tr>
+  <tr>
+    <td><b>Shaun Pollock</b></td>
+    <td>Test/ODI</td>
+    <td style="font-size:1.15em;font-weight:bold;color:#ffd84b;">Seam bowling legend</td>
+  </tr>
+  <tr>
+    <td><b>Hashim Amla</b></td>
+    <td>Test/ODI</td>
+    <td style="font-size:1.15em;font-weight:bold;color:#ffd84b;">Elegant opening batsman</td>
+  </tr>
+  <tr>
+    <td><b>Mark Boucher</b></td>
+    <td>Test/ODI</td>
+    <td style="font-size:1.15em;font-weight:bold;color:#ffd84b;">Most Test dismissals as keeper</td>
+  </tr>
+  <tr>
+    <td><b>Allan Donald</b></td>
+    <td>Test/ODI</td>
+    <td style="font-size:1.15em;font-weight:bold;color:#ffd84b;">Premier fast bowler</td>
+  </tr>
+  <tr>
+    <td><b>Graeme Smith</b></td>
+    <td>Test/ODI</td>
+    <td style="font-size:1.15em;font-weight:bold;color:#ffd84b;">Youngest Test captain, great leader</td>
+  </tr>
+  <tr>
+    <td><b>Makhaya Ntini</b></td>
+    <td>Test/ODI</td>
+    <td style="font-size:1.15em;font-weight:bold;color:#ffd84b;">First black African Test star</td>
+  </tr>
+  <tr>
+    <td><b>Dale Steyn</b></td>
+    <td>Test/ODI/T20I</td>
+    <td style="font-size:1.15em;font-weight:bold;color:#ffd84b;">Express pace legend</td>
+  </tr>
+  <tr>
+    <td><b>Faf du Plessis</b></td>
+    <td>Test/ODI/T20I</td>
+    <td style="font-size:1.15em;font-weight:bold;color:#ffd84b;">Modern batting hero, captain</td>
+  </tr>
+</table>
 </body>
 </html>
+
 
