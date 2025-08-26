@@ -43,48 +43,250 @@
             font-size: 0.95em;
         }
     </style>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background: #f8faff;
+  margin: 0;
+  padding: 0;
+}
+
+.news-list h2, h2 {
+  color: #1560bd;
+  margin-top: 28px;
+  letter-spacing: 1px;
+}
+.news-list {
+  margin-bottom: 28px;
+}
+.news-item {
+  background: #eaf1fb;
+  margin-bottom: 13px;
+  padding: 12px 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px #eee;
+}
+.news-title {
+  font-weight: bold;
+  color: #1560bd;
+  text-decoration: none;
+  font-size: 1.12em;
+}
+.news-summary {
+  color: #28709e;
+  font-size: 1em;
+}
+
+.squad-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 30px;
+}
+.player-card {
+  background: #edf6fd;
+  border: 1px solid #bedcf4;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px #e8e8ee;
+  padding: 13px 18px;
+  min-width: 150px;
+  margin-bottom: 13px;
+  transition: box-shadow .2s;
+}
+.player-card:hover {
+  box-shadow: 0 8px 24px #c7e2ff;
+}
+.player-name {
+  font-size: 1.15em;
+  font-weight: bold;
+  color: #10255c;
+  margin-bottom: 4px;
+  letter-spacing: .3px;
+}
+.player-role {
+  color: #2484a1;
+  font-size: .97em;
+}
+
+.star-players {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 16px;
+  font-size: 1.07em;
+  background: #f5fbff;
+  box-shadow: 0 2px 10px #eaf1fb;
+  border-radius: 7px;
+  overflow: hidden;
+}
+.star-players th, .star-players td {
+  border: 1.5px solid #bedcf4;
+  padding: 8px 16px;
+  text-align: left;
+}
+.star-players th {
+  background: #1560bd;
+  color: #fff;
+  font-size: 1.12em;
+  font-weight: bold;
+}
+.star-players td {
+  font-size: 1.11em;
+}
+.star-players td[style] {
+  font-size: 1.16em !important;
+  color: #1768b2 !important;
+  font-weight: bold;
+}
+</style>
 </head>
 <body>
-    <div class="header">Pakistan Cricket Team</div>
-    <div class="container">
-        <div class="section-title">Latest News</div>
-        
-        <div class="news-item">
-            <span class="news-headline">Pakistan suffers ODI series loss in West Indies</span><br>
-            <span class="news-date">August 12, 2025</span><br>
-            Pakistan lost the three-match ODI series 1-2 against West Indies after falling short in the last game at Tarouba, despite Babar Azam's quick fifty and a promising start from the bowlers.
-        </div>
+<!-- Green/Gold heading bar for Pakistan -->
+<div style="background:#155724; color:#ffd700; padding:16px 0; text-align:center; font-size:2em; font-weight:bold; letter-spacing:1px; margin-bottom:22px; border-radius:8px;">
+  Pakistan Cricket Team
+</div>
 
-        <div class="news-item">
-            <span class="news-headline">Imam-ul-Haq’s century not enough in ODI decider</span><br>
-            <span class="news-date">August 12, 2025</span><br>
-            Imam-ul-Haq scored his tenth ODI ton but Pakistan’s middle and lower order faltered under pressure in the series decider against West Indies, losing the run chase.
-        </div>
+<!-- Latest News -->
+<div class="news-list">
+  <h2>Latest News</h2>
+  <div class="news-item">
+    <a href="#" class="news-title">Babar Azam reinstated as Pakistan ODI and T20I captain</a>
+    <div class="news-summary">Babar leads Green Shirts in Asia Cup and World Cup preparations after brief change.</div>
+  </div>
+  <div class="news-item">
+    <a href="#" class="news-title">Shan Masood to captain Test squad against Australia</a>
+    <div class="news-summary">Left-hander takes charge as Test leader for the 2025 ICC WTC campaign.</div>
+  </div>
+  <div class="news-item">
+    <a href="#" class="news-title">Shaheen Afridi delivers match-winning spell in Asia Cup warm-up</a>
+    <div class="news-summary">Afridi rattles Indian top order, finishes with 4 wickets.</div>
+  </div>
+  <div class="news-item">
+    <a href="#" class="news-title">Fakhar Zaman, Rizwan dominate in ODI run chase</a>
+    <div class="news-summary">Top order batters shine to seal a big win against Bangladesh.</div>
+  </div>
+  <div class="news-item">
+    <a href="#" class="news-title">Usama Mir impresses with his leg-spin in T20Is</a>
+    <div class="news-summary">Mir’s breakthroughs help Pakistan defend a low total in UAE.</div>
+  </div>
+  <div class="news-item">
+    <a href="#" class="news-title">Naseem Shah returns to pace attack post-injury</a>
+    <div class="news-summary">Young quick looked sharp in comeback match against Afghanistan.</div>
+  </div>
+</div>
 
-        <div class="news-item">
-            <span class="news-headline">Team announced for Afghanistan T20I Tri-series</span><br>
-            <span class="news-date">August 11, 2025</span><br>
-            PCB announced a 16-member squad for the upcoming Afghanistan tri-nation T20I series in Sharjah, retaining key players and testing young prospects for the Asia Cup.
-        </div>
+<!-- ODI Squad -->
+<h2>Current ODI Squad</h2>
+<div class="squad-list">
+  <div class="player-card"><div class="player-name"><strong>Babar Azam</strong> (Captain)</div><div class="player-role">Top Order Batsman</div></div>
+  <div class="player-card"><div class="player-name"><strong>Fakhar Zaman</strong></div><div class="player-role">Opener</div></div>
+  <div class="player-card"><div class="player-name"><strong>Imam-ul-Haq</strong></div><div class="player-role">Opener</div></div>
+  <div class="player-card"><div class="player-name"><strong>Abdullah Shafique</strong></div><div class="player-role">Top Order</div></div>
+  <div class="player-card"><div class="player-name"><strong>Mohammad Rizwan</strong></div><div class="player-role">Wicketkeeper-Batsman</div></div>
+  <div class="player-card"><div class="player-name"><strong>Iftikhar Ahmed</strong></div><div class="player-role">Middle Order</div></div>
+  <div class="player-card"><div class="player-name"><strong>Shadab Khan</strong></div><div class="player-role">Allrounder/Spinner</div></div>
+  <div class="player-card"><div class="player-name"><strong>Usama Mir</strong></div><div class="player-role">Leg Spinner</div></div>
+  <div class="player-card"><div class="player-name"><strong>Shaheen Afridi</strong></div><div class="player-role">Fast Bowler</div></div>
+  <div class="player-card"><div class="player-name"><strong>Naseem Shah</strong></div><div class="player-role">Fast Bowler</div></div>
+  <div class="player-card"><div class="player-name"><strong>Haris Rauf</strong></div><div class="player-role">Fast Bowler</div></div>
+  <div class="player-card"><div class="player-name"><strong>Salman Ali Agha</strong></div><div class="player-role">Allrounder</div></div>
+  <div class="player-card"><div class="player-name"><strong>Mohammad Nawaz</strong></div><div class="player-role">Allrounder/Spinner</div></div>
+  <div class="player-card"><div class="player-name"><strong>Abrar Ahmed</strong></div><div class="player-role">Leg Spinner</div></div>
+</div>
 
-        <div class="news-item">
-            <span class="news-headline">Mohammad Amir returns to T20I squad</span><br>
-            <span class="news-date">August 10, 2025</span><br>
-            Fast bowler Mohammad Amir has been recalled to the Pakistan T20I setup for the tri-series after consistent performances in the Pakistan Super League.
-        </div>
+<!-- Test Squad -->
+<h2>Current Test Squad</h2>
+<div class="squad-list">
+  <div class="player-card"><div class="player-name"><strong>Shan Masood</strong> (Captain)</div><div class="player-role">Opener</div></div>
+  <div class="player-card"><div class="player-name"><strong>Abdullah Shafique</strong></div><div class="player-role">Opener</div></div>
+  <div class="player-card"><div class="player-name"><strong>Babar Azam</strong></div><div class="player-role">Top Order</div></div>
+  <div class="player-card"><div class="player-name"><strong>Imam-ul-Haq</strong></div><div class="player-role">Opener</div></div>
+  <div class="player-card"><div class="player-name"><strong>Saud Shakeel</strong></div><div class="player-role">Batsman</div></div>
+  <div class="player-card"><div class="player-name"><strong>Sarfaraz Ahmed</strong></div><div class="player-role">Wicketkeeper-Batsman</div></div>
+  <div class="player-card"><div class="player-name"><strong>Salman Ali Agha</strong></div><div class="player-role">Allrounder</div></div>
+  <div class="player-card"><div class="player-name"><strong>Mohammad Nawaz</strong></div><div class="player-role">Allrounder/Spinner</div></div>
+  <div class="player-card"><div class="player-name"><strong>Shaheen Afridi</strong></div><div class="player-role">Fast Bowler</div></div>
+  <div class="player-card"><div class="player-name"><strong>Naseem Shah</strong></div><div class="player-role">Fast Bowler</div></div>
+  <div class="player-card"><div class="player-name"><strong>Abrar Ahmed</strong></div><div class="player-role">Leg Spinner</div></div>
+  <div class="player-card"><div class="player-name"><strong>Hasan Ali</strong></div><div class="player-role">Fast Bowler</div></div>
+</div>
 
-        <div class="news-item">
-            <span class="news-headline">Pakistani women’s team prepares for Bangladesh tour</span><br>
-            <span class="news-date">August 8, 2025</span><br>
-            The national women's team is set for a two-week training camp ahead of their Bangladesh tour as new head coach Sana Mir focuses on bowling improvements.
-        </div>
+<!-- T20I Squad -->
+<h2>Current T20I Squad</h2>
+<div class="squad-list">
+  <div class="player-card"><div class="player-name"><strong>Babar Azam</strong> (Captain)</div><div class="player-role">Top Order Batsman</div></div>
+  <div class="player-card"><div class="player-name"><strong>Mohammad Rizwan</strong></div><div class="player-role">Wicketkeeper-Batsman</div></div>
+  <div class="player-card"><div class="player-name"><strong>Fakhar Zaman</strong></div><div class="player-role">Opener</div></div>
+  <div class="player-card"><div class="player-name"><strong>Azam Khan</strong></div><div class="player-role">Wicketkeeper-Batsman</div></div>
+  <div class="player-card"><div class="player-name"><strong>Saim Ayub</strong></div><div class="player-role">Opener</div></div>
+  <div class="player-card"><div class="player-name"><strong>Iftikhar Ahmed</strong></div><div class="player-role">Middle Order</div></div>
+  <div class="player-card"><div class="player-name"><strong>Shadab Khan</strong></div><div class="player-role">Allrounder/Spinner</div></div>
+  <div class="player-card"><div class="player-name"><strong>Shaheen Afridi</strong></div><div class="player-role">Fast Bowler</div></div>
+  <div class="player-card"><div class="player-name"><strong>Naseem Shah</strong></div><div class="player-role">Fast Bowler</div></div>
+  <div class="player-card"><div class="player-name"><strong>Mohammad Nawaz</strong></div><div class="player-role">Allrounder/Spinner</div></div>
+  <div class="player-card"><div class="player-name"><strong>Haris Rauf</strong></div><div class="player-role">Fast Bowler</div></div>
+  <div class="player-card"><div class="player-name"><strong>Usama Mir</strong></div><div class="player-role">Leg Spinner</div></div>
+</div>
 
-        <div class="news-item">
-            <span class="news-headline">Haider Ali leads Pakistan U-23 to Emerging Asia Cup final</span><br>
-            <span class="news-date">August 6, 2025</span><br>
-            Youngster Haider Ali starred with a quickfire 75 to power Pakistan U-23 to the Emerging Asia Cup final, where they’ll face Sri Lanka in Colombo this weekend.
-        </div>
-    </div>
+<!-- Star Players Table -->
+<h2>Star Players (All-Time)</h2>
+<table class="star-players" style="font-size:1.05em;">
+  <tr>
+    <th>Player</th>
+    <th>Format</th>
+    <th style="font-size:1.2em; color:#155724;">Achievements</th>
+  </tr>
+  <tr>
+    <td><b>Imran Khan</b></td>
+    <td>Test/ODI</td>
+    <td style="font-size:1.15em;font-weight:bold;color:#ffd700;">1992 World Cup-winning captain, all-rounder</td>
+  </tr>
+  <tr>
+    <td><b>Wasim Akram</b></td>
+    <td>Test/ODI</td>
+    <td style="font-size:1.15em;font-weight:bold;color:#ffd700;">Sultan of Swing, 900+ international wickets</td>
+  </tr>
+  <tr>
+    <td><b>Waqar Younis</b></td>
+    <td>Test/ODI</td>
+    <td style="font-size:1.15em;font-weight:bold;color:#ffd700;">Fast bowling legend, toe-crusher</td>
+  </tr>
+  <tr>
+    <td><b>Inzamam-ul-Haq</b></td>
+    <td>Test/ODI</td>
+    <td style="font-size:1.15em;font-weight:bold;color:#ffd700;">Batting mainstay, match-winner</td>
+  </tr>
+  <tr>
+    <td><b>Javed Miandad</b></td>
+    <td>Test/ODI</td>
+    <td style="font-size:1.15em;font-weight:bold;color:#ffd700;">Master batsman, greatest fighter</td>
+  </tr>
+  <tr>
+    <td><b>Shoaib Akhtar</b></td>
+    <td>Test/ODI</td>
+    <td style="font-size:1.15em;font-weight:bold;color:#ffd700;">World's fastest bowler</td>
+  </tr>
+  <tr>
+    <td><b>Saqlain Mushtaq</b></td>
+    <td>Test/ODI</td>
+    <td style="font-size:1.15em;font-weight:bold;color:#ffd700;">Inventor of the doosra, legendary spinner</td>
+  </tr>
+  <tr>
+    <td><b>Younis Khan</b></td>
+    <td>Test/ODI</td>
+    <td style="font-size:1.15em;font-weight:bold;color:#ffd700;">Pakistan’s highest Test run scorer</td>
+  </tr>
+  <tr>
+    <td><b>Shahid Afridi</b></td>
+    <td>ODI/T20I</td>
+    <td style="font-size:1.15em;font-weight:bold;color:#ffd700;">Boom Boom, ODI fastest century</td>
+  </tr>
+  <tr>
+    <td><b>Misbah-ul-Haq</b></td>
+    <td>Test/ODI</td>
+    <td style="font-size:1.15em;font-weight:bold;color:#ffd700;">Steady captain, 2016 Test No.1</td>
+  </tr>
+</table>
 </body>
 </html>
+
 
