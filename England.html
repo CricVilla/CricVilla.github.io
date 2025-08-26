@@ -43,48 +43,254 @@
             font-size: 0.95em;
         }
     </style>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background: #f8faff;
+  margin: 0;
+  padding: 0;
+}
+
+.news-list h2, h2 {
+  color: #1560bd;
+  margin-top: 28px;
+  letter-spacing: 1px;
+}
+.news-list {
+  margin-bottom: 28px;
+}
+.news-item {
+  background: #eaf1fb;
+  margin-bottom: 13px;
+  padding: 12px 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px #eee;
+}
+.news-title {
+  font-weight: bold;
+  color: #1560bd;
+  text-decoration: none;
+  font-size: 1.12em;
+}
+.news-summary {
+  color: #28709e;
+  font-size: 1em;
+}
+
+.squad-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 30px;
+}
+.player-card {
+  background: #edf6fd;
+  border: 1px solid #bedcf4;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px #e8e8ee;
+  padding: 13px 18px;
+  min-width: 150px;
+  margin-bottom: 13px;
+  transition: box-shadow .2s;
+}
+.player-card:hover {
+  box-shadow: 0 8px 24px #c7e2ff;
+}
+.player-name {
+  font-size: 1.15em;
+  font-weight: bold;
+  color: #10255c;
+  margin-bottom: 4px;
+  letter-spacing: .3px;
+}
+.player-role {
+  color: #2484a1;
+  font-size: .97em;
+}
+
+.star-players {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 16px;
+  font-size: 1.07em;
+  background: #f5fbff;
+  box-shadow: 0 2px 10px #eaf1fb;
+  border-radius: 7px;
+  overflow: hidden;
+}
+.star-players th, .star-players td {
+  border: 1.5px solid #bedcf4;
+  padding: 8px 16px;
+  text-align: left;
+}
+.star-players th {
+  background: #1560bd;
+  color: #fff;
+  font-size: 1.12em;
+  font-weight: bold;
+}
+.star-players td {
+  font-size: 1.11em;
+}
+.star-players td[style] {
+  font-size: 1.16em !important;
+  color: #1768b2 !important;
+  font-weight: bold;
+}
+</style>
 </head>
 <body>
-    <div class="header">England Cricket Team</div>
-    <div class="container">
-        <div class="section-title">Latest News</div>
+<!-- Navy blue heading bar for England -->
+<div style="background:#002d72; color:#fff; padding:16px 0; text-align:center; font-size:2em; font-weight:bold; letter-spacing:1px; margin-bottom:22px; border-radius:8px;">
+  England Cricket Team
+</div>
 
-        <div class="news-item">
-            <span class="news-headline">Root’s 166 Leads ODI Series Win</span><br>
-            <span class="news-date">August 24, 2025</span><br>
-            Joe Root struck an unbeaten 166, becoming England’s all-time leading ODI run-scorer and securing another series victory for England’s ODI side[web:34].
-        </div>
+<!-- Latest News -->
+<div class="news-list">
+  <h2>Latest News</h2>
+  <div class="news-item">
+    <a href="#" class="news-title">Ben Stokes returns as England Test captain</a>
+    <div class="news-summary">Stokes resumes leadership for the packed home Test summer 2025.</div>
+  </div>
+  <div class="news-item">
+    <a href="#" class="news-title">Jos Buttler continues as ODI and T20I Captain</a>
+    <div class="news-summary">Buttler leads the white-ball squads for Asia Cup and home series.</div>
+  </div>
+  <div class="news-item">
+    <a href="#" class="news-title">Harry Brook shines in England’s white-ball resurgence</a>
+    <div class="news-summary">Brooks delivers match-winning knocks in both ODI and T20 formats.</div>
+  </div>
+  <div class="news-item">
+    <a href="#" class="news-title">Reece Topley stars with ball against Pakistan</a>
+    <div class="news-summary">England's left-arm pacer takes 4 wickets in Asia Cup warmup.</div>
+  </div>
+  <div class="news-item">
+    <a href="#" class="news-title">Jofra Archer set for Test comeback versus India</a>
+    <div class="news-summary">Archer fit again, targeting the India Test series return end of August.</div>
+  </div>
+  <div class="news-item">
+    <a href="#" class="news-title">Phil Salt and Will Jacks power England’s top order</a>
+    <div class="news-summary">Explosive openers dominate in recent T20I victories.</div>
+  </div>
+</div>
 
-        <div class="news-item">
-            <span class="news-headline">England-India Test Thriller at The Oval</span><br>
-            <span class="news-date">August 4, 2025</span><br>
-            India edged England by 6 runs in a dramatic fifth Test at The Oval, leveling the five-match series 2-2 after a tense final day with dramatic collapses and stand-out performances from both sides[web:32].
-        </div>
+<!-- ODI Squad -->
+<h2>Current ODI Squad</h2>
+<div class="squad-list">
+  <div class="player-card"><div class="player-name"><strong>Jos Buttler</strong> (Captain)</div><div class="player-role">Wicketkeeper-Batsman</div></div>
+  <div class="player-card"><div class="player-name"><strong>Dawid Malan</strong></div><div class="player-role">Opener</div></div>
+  <div class="player-card"><div class="player-name"><strong>Jonny Bairstow</strong></div><div class="player-role">Opener/Wicketkeeper</div></div>
+  <div class="player-card"><div class="player-name"><strong>Joe Root</strong></div><div class="player-role">Batsman</div></div>
+  <div class="player-card"><div class="player-name"><strong>Harry Brook</strong></div><div class="player-role">Middle Order</div></div>
+  <div class="player-card"><div class="player-name"><strong>Ben Stokes</strong></div><div class="player-role">Allrounder</div></div>
+  <div class="player-card"><div class="player-name"><strong>Moeen Ali</strong></div><div class="player-role">Allrounder</div></div>
+  <div class="player-card"><div class="player-name"><strong>Sam Curran</strong></div><div class="player-role">Bowling Allrounder</div></div>
+  <div class="player-card"><div class="player-name"><strong>Chris Woakes</strong></div><div class="player-role">Fast Bowler</div></div>
+  <div class="player-card"><div class="player-name"><strong>Reece Topley</strong></div><div class="player-role">Fast Bowler</div></div>
+  <div class="player-card"><div class="player-name"><strong>Jofra Archer</strong></div><div class="player-role">Fast Bowler</div></div>
+  <div class="player-card"><div class="player-name"><strong>Adil Rashid</strong></div><div class="player-role">Spinner</div></div>
+  <div class="player-card"><div class="player-name"><strong>Will Jacks</strong></div><div class="player-role">Opener/Allrounder</div></div>
+  <div class="player-card"><div class="player-name"><strong>Gus Atkinson</strong></div><div class="player-role">Fast Bowler</div></div>
+  <div class="player-card"><div class="player-name"><strong>Phil Salt</strong></div><div class="player-role">Opener</div></div>
+</div>
 
-        <div class="news-item">
-            <span class="news-headline">Busy 2025; Ashes and More Set for England</span><br>
-            <span class="news-date">August 2025</span><br>
-            England's 2025 calendar includes series against India, the West Indies, South Africa, Ireland, and an Ashes series in Australia at the end of the year[web:33].
-        </div>
+<!-- Test Squad -->
+<h2>Current Test Squad</h2>
+<div class="squad-list">
+  <div class="player-card"><div class="player-name"><strong>Ben Stokes</strong> (Captain)</div><div class="player-role">Allrounder</div></div>
+  <div class="player-card"><div class="player-name"><strong>Zak Crawley</strong></div><div class="player-role">Opener</div></div>
+  <div class="player-card"><div class="player-name"><strong>Harry Brook</strong></div><div class="player-role">Batsman</div></div>
+  <div class="player-card"><div class="player-name"><strong>Joe Root</strong></div><div class="player-role">Batsman</div></div>
+  <div class="player-card"><div class="player-name"><strong>Jonny Bairstow</strong></div><div class="player-role">Wicketkeeper-Batsman</div></div>
+  <div class="player-card"><div class="player-name"><strong>Ollie Pope</strong></div><div class="player-role">Batsman</div></div>
+  <div class="player-card"><div class="player-name"><strong>Moeen Ali</strong></div><div class="player-role">Allrounder</div></div>
+  <div class="player-card"><div class="player-name"><strong>Chris Woakes</strong></div><div class="player-role">Fast Bowler</div></div>
+  <div class="player-card"><div class="player-name"><strong>Stuart Broad</strong></div><div class="player-role">Fast Bowler</div></div>
+  <div class="player-card"><div class="player-name"><strong>James Anderson</strong></div><div class="player-role">Fast Bowler</div></div>
+  <div class="player-card"><div class="player-name"><strong>Jofra Archer</strong></div><div class="player-role">Fast Bowler</div></div>
+  <div class="player-card"><div class="player-name"><strong>Jack Leach</strong></div><div class="player-role">Spinner</div></div>
+  <div class="player-card"><div class="player-name"><strong>Sam Curran</strong></div><div class="player-role">Bowling Allrounder</div></div>
+  <div class="player-card"><div class="player-name"><strong>Ben Foakes</strong></div><div class="player-role">Wicketkeeper-Batsman</div></div>
+</div>
 
-        <div class="news-item">
-            <span class="news-headline">England Names Test and ODI Squads</span><br>
-            <span class="news-date">August 20, 2025</span><br>
-            England announced squads for upcoming ODIs and Test series, including the return of seasoned stars and debuts for several newcomers against South Africa and Ireland[web:31].
-        </div>
+<!-- T20I Squad -->
+<h2>Current T20I Squad</h2>
+<div class="squad-list">
+  <div class="player-card"><div class="player-name"><strong>Jos Buttler</strong> (Captain)</div><div class="player-role">Wicketkeeper-Batsman</div></div>
+  <div class="player-card"><div class="player-name"><strong>Phil Salt</strong></div><div class="player-role">Opener</div></div>
+  <div class="player-card"><div class="player-name"><strong>Will Jacks</strong></div><div class="player-role">Opener/Allrounder</div></div>
+  <div class="player-card"><div class="player-name"><strong>Harry Brook</strong></div><div class="player-role">Batsman</div></div>
+  <div class="player-card"><div class="player-name"><strong>Moeen Ali</strong></div><div class="player-role">Allrounder</div></div>
+  <div class="player-card"><div class="player-name"><strong>Liam Livingston</strong></div><div class="player-role">Allrounder</div></div>
+  <div class="player-card"><div class="player-name"><strong>Sam Curran</strong></div><div class="player-role">Bowling Allrounder</div></div>
+  <div class="player-card"><div class="player-name"><strong>Reece Topley</strong></div><div class="player-role">Fast Bowler</div></div>
+  <div class="player-card"><div class="player-name"><strong>Jofra Archer</strong></div><div class="player-role">Fast Bowler</div></div>
+  <div class="player-card"><div class="player-name"><strong>Adil Rashid</strong></div><div class="player-role">Spinner</div></div>
+  <div class="player-card"><div class="player-name"><strong>Chris Jordan</strong></div><div class="player-role">Fast Bowler</div></div>
+  <div class="player-card"><div class="player-name"><strong>Saqib Mahmood</strong></div><div class="player-role">Fast Bowler</div></div>
+  <div class="player-card"><div class="player-name"><strong>Luke Wood</strong></div><div class="player-role">Fast Bowler</div></div>
+</div>
 
-        <div class="news-item">
-            <span class="news-headline">Heather Knight Returns for World Cup</span><br>
-            <span class="news-date">August 21, 2025</span><br>
-            England captain Heather Knight returns from injury to lead the squad for the ICC Women’s World Cup as England looks to dominate with four spinners named to the team[web:31].
-        </div>
-
-        <div class="news-item">
-            <span class="news-headline">England’s Classic Test Series Praised by McCullum</span><br>
-            <span class="news-date">August 19, 2025</span><br>
-            England coach Brendon McCullum labeled the Test series against India as “one of the most captivating he’s been a part of,” with tight finishes and individual brilliance throughout[web:31].
-        </div>
-    </div>
+<!-- Star Players Table -->
+<h2>Star Players (All-Time)</h2>
+<table class="star-players" style="font-size:1.05em;">
+  <tr>
+    <th>Player</th>
+    <th>Format</th>
+    <th style="font-size:1.2em; color:#ee3057;">Achievements</th>
+  </tr>
+  <tr>
+    <td><b>Alastair Cook</b></td>
+    <td>Test</td>
+    <td style="font-size:1.2em;font-weight:bold;color:#ee3057;">Most Test runs for England, captaincy legend</td>
+  </tr>
+  <tr>
+    <td><b>Joe Root</b></td>
+    <td>Test/ODI</td>
+    <td style="font-size:1.2em;font-weight:bold;color:#ee3057;">Modern batting great, England captain</td>
+  </tr>
+  <tr>
+    <td><b>Ben Stokes</b></td>
+    <td>All Formats</td>
+    <td style="font-size:1.15em;font-weight:bold;color:#ee3057;">2019 World Cup hero, allrounder</td>
+  </tr>
+  <tr>
+    <td><b>James Anderson</b></td>
+    <td>Test</td>
+    <td style="font-size:1.15em;font-weight:bold;color:#ee3057;">Record Test wickets for fast bowler</td>
+  </tr>
+  <tr>
+    <td><b>Stuart Broad</b></td>
+    <td>Test</td>
+    <td style="font-size:1.15em;font-weight:bold;color:#ee3057;">Over 600 Test wickets</td>
+  </tr>
+  <tr>
+    <td><b>Jos Buttler</b></td>
+    <td>ODI/T20I</td>
+    <td style="font-size:1.15em;font-weight:bold;color:#ee3057;">Explosive batsman, World Cup-winning captain</td>
+  </tr>
+  <tr>
+    <td><b>Eoin Morgan</b></td>
+    <td>ODI/T20I</td>
+    <td style="font-size:1.15em;font-weight:bold;color:#ee3057;">ODI World Cup-winning captain</td>
+  </tr>
+  <tr>
+    <td><b>Ian Botham</b></td>
+    <td>Test/ODI</td>
+    <td style="font-size:1.15em;font-weight:bold;color:#ee3057;">Legendary allrounder</td>
+  </tr>
+  <tr>
+    <td><b>Kevin Pietersen</b></td>
+    <td>Test/ODI/T20I</td>
+    <td style="font-size:1.15em;font-weight:bold;color:#ee3057;">Iconic batsman</td>
+  </tr>
+  <tr>
+    <td><b>Graham Gooch</b></td>
+    <td>Test/ODI</td>
+    <td style="font-size:1.15em;font-weight:bold;color:#ee3057;">Former captain, batting legend</td>
+  </tr>
+      </table>
 </body>
 </html>
+
 
