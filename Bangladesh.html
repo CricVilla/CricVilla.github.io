@@ -43,48 +43,248 @@
             font-size: 0.95em;
         }
     </style>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background: #f8faff;
+  margin: 0;
+  padding: 0;
+}
+
+.news-list h2, h2 {
+  color: #1560bd;
+  margin-top: 28px;
+  letter-spacing: 1px;
+}
+.news-list {
+  margin-bottom: 28px;
+}
+.news-item {
+  background: #eaf1fb;
+  margin-bottom: 13px;
+  padding: 12px 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px #eee;
+}
+.news-title {
+  font-weight: bold;
+  color: #1560bd;
+  text-decoration: none;
+  font-size: 1.12em;
+}
+.news-summary {
+  color: #28709e;
+  font-size: 1em;
+}
+
+.squad-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 30px;
+}
+.player-card {
+  background: #edf6fd;
+  border: 1px solid #bedcf4;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px #e8e8ee;
+  padding: 13px 18px;
+  min-width: 150px;
+  margin-bottom: 13px;
+  transition: box-shadow .2s;
+}
+.player-card:hover {
+  box-shadow: 0 8px 24px #c7e2ff;
+}
+.player-name {
+  font-size: 1.15em;
+  font-weight: bold;
+  color: #10255c;
+  margin-bottom: 4px;
+  letter-spacing: .3px;
+}
+.player-role {
+  color: #2484a1;
+  font-size: .97em;
+}
+
+.star-players {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 16px;
+  font-size: 1.07em;
+  background: #f5fbff;
+  box-shadow: 0 2px 10px #eaf1fb;
+  border-radius: 7px;
+  overflow: hidden;
+}
+.star-players th, .star-players td {
+  border: 1.5px solid #bedcf4;
+  padding: 8px 16px;
+  text-align: left;
+}
+.star-players th {
+  background: #1560bd;
+  color: #fff;
+  font-size: 1.12em;
+  font-weight: bold;
+}
+.star-players td {
+  font-size: 1.11em;
+}
+.star-players td[style] {
+  font-size: 1.16em !important;
+  color: #1768b2 !important;
+  font-weight: bold;
+}
+</style>
 </head>
 <body>
-    <div class="header">Bangladesh Cricket Team</div>
-    <div class="container">
-        <div class="section-title">Latest News</div>
+ <!-- Dark green/red heading bar for Bangladesh -->
+<div style="background:#006a4e; color:#e53935; padding:16px 0; text-align:center; font-size:2em; font-weight:bold; letter-spacing:1px; margin-bottom:22px; border-radius:8px;">
+  Bangladesh Cricket Team
+</div>
 
-        <div class="news-item">
-            <span class="news-headline">Bangladesh unveils Asia Cup 2025 squad</span><br>
-            <span class="news-date">August 22, 2025</span><br>
-            Bangladesh selectors have dropped Mehidy Hasan Miraz from a youthful Asia Cup 2025 squad. Several all-rounders are included as the team looks to refresh its T20 strategy[web:86][web:88].
-        </div>
+<!-- Latest News -->
+<div class="news-list">
+  <h2>Latest News</h2>
+  <div class="news-item">
+    <a href="#" class="news-title">Najmul Hossain Shanto captains Bangladesh in all formats</a>
+    <div class="news-summary">Shanto takes charge after Shakib Al Hasan’s retirement from captaincy, leading Tigers in Africa and Asia Cup.</div>
+  </div>
+  <div class="news-item">
+    <a href="#" class="news-title">Shakib Al Hasan continues as key senior allrounder</a>
+    <div class="news-summary">Bangladesh’s star delivers with bat and ball against Sri Lanka and Zimbabwe.</div>
+  </div>
+  <div class="news-item">
+    <a href="#" class="news-title">Towhid Hridoy powers Bangladesh to T20 wins</a>
+    <div class="news-summary">Youngster stars with quick runs and match-winning knocks.</div>
+  </div>
+  <div class="news-item">
+    <a href="#" class="news-title">Taskin Ahmed and Shoriful Islam lead bowling attack</a>
+    <div class="news-summary">Pace duo shines with early breakthroughs in ODI and T20I matches.</div>
+  </div>
+  <div class="news-item">
+    <a href="#" class="news-title">Mehidy Hasan Miraz scores maiden ODI century</a>
+    <div class="news-summary">Spin allrounder makes history with match-winning ton.</div>
+  </div>
+  <div class="news-item">
+    <a href="#" class="news-title">Tamim Iqbal returns for Test series</a>
+    <div class="news-summary">Senior opener bolsters the Bangladesh top order for red-ball cricket.</div>
+  </div>
+</div>
 
-        <div class="news-item">
-            <span class="news-headline">India-Bangladesh white-ball series postponed</span><br>
-            <span class="news-date">August 2025</span><br>
-            The white-ball tour of India to Bangladesh has been mutually postponed to September 2026 due to scheduling issues, after discussions between BCB and BCCI officials[web:83][web:85].
-        </div>
+<!-- ODI Squad -->
+<h2>Current ODI Squad</h2>
+<div class="squad-list">
+  <div class="player-card"><div class="player-name"><strong>Najmul Hossain Shanto</strong> (Captain)</div><div class="player-role">Top Order Batsman</div></div>
+  <div class="player-card"><div class="player-name"><strong>Tamim Iqbal</strong></div><div class="player-role">Opener</div></div>
+  <div class="player-card"><div class="player-name"><strong>Liton Das</strong></div><div class="player-role">Opener/Wicketkeeper</div></div>
+  <div class="player-card"><div class="player-name"><strong>Mushfiqur Rahim</strong></div><div class="player-role">Middle Order/Wicketkeeper</div></div>
+  <div class="player-card"><div class="player-name"><strong>Towhid Hridoy</strong></div><div class="player-role">Middle Order</div></div>
+  <div class="player-card"><div class="player-name"><strong>Sakib Al Hasan</strong></div><div class="player-role">Allrounder</div></div>
+  <div class="player-card"><div class="player-name"><strong>Mehidy Hasan Miraz</strong></div><div class="player-role">Allrounder/Spinner</div></div>
+  <div class="player-card"><div class="player-name"><strong>Taskin Ahmed</strong></div><div class="player-role">Fast Bowler</div></div>
+  <div class="player-card"><div class="player-name"><strong>Shoriful Islam</strong></div><div class="player-role">Fast Bowler</div></div>
+  <div class="player-card"><div class="player-name"><strong>Mustafizur Rahman</strong></div><div class="player-role">Fast Bowler</div></div>
+  <div class="player-card"><div class="player-name"><strong>Nasum Ahmed</strong></div><div class="player-role">Spinner</div></div>
+  <div class="player-card"><div class="player-name"><strong>Afif Hossain</strong></div><div class="player-role">Allrounder</div></div>
+  <div class="player-card"><div class="player-name"><strong>Mahmudullah Riyad</strong></div><div class="player-role">Allrounder/Middle Order</div></div>
+</div>
 
-        <div class="news-item">
-            <span class="news-headline">Bangladesh to play Afghanistan in UAE after Asia Cup</span><br>
-            <span class="news-date">August 24, 2025</span><br>
-            Afghanistan will host Bangladesh for a white-ball series of three ODIs and three T20Is in the UAE directly after the Asia Cup, providing valuable preparation for both teams[web:51][web:84].
-        </div>
+<!-- Test Squad -->
+<h2>Current Test Squad</h2>
+<div class="squad-list">
+  <div class="player-card"><div class="player-name"><strong>Najmul Hossain Shanto</strong> (Captain)</div><div class="player-role">Top Order Batsman</div></div>
+  <div class="player-card"><div class="player-name"><strong>Tamim Iqbal</strong></div><div class="player-role">Opener</div></div>
+  <div class="player-card"><div class="player-name"><strong>Mominul Haque</strong></div><div class="player-role">Middle Order</div></div>
+  <div class="player-card"><div class="player-name"><strong>Mahmudul Hasan Joy</strong></div><div class="player-role">Opener</div></div>
+  <div class="player-card"><div class="player-name"><strong>Mushfiqur Rahim</strong></div><div class="player-role">Middle Order/Wicketkeeper</div></div>
+  <div class="player-card"><div class="player-name"><strong>Sakib Al Hasan</strong></div><div class="player-role">Allrounder</div></div>
+  <div class="player-card"><div class="player-name"><strong>Mehidy Hasan Miraz</strong></div><div class="player-role">Allrounder/Spinner</div></div>
+  <div class="player-card"><div class="player-name"><strong>Taijul Islam</strong></div><div class="player-role">Spinner</div></div>
+  <div class="player-card"><div class="player-name"><strong>Ebadot Hossain</strong></div><div class="player-role">Fast Bowler</div></div>
+  <div class="player-card"><div class="player-name"><strong>Shoriful Islam</strong></div><div class="player-role">Fast Bowler</div></div>
+  <div class="player-card"><div class="player-name"><strong>Taskin Ahmed</strong></div><div class="player-role">Fast Bowler</div></div>
+</div>
 
-        <div class="news-item">
-            <span class="news-headline">Julian Wood appointed as power-hitting coach</span><br>
-            <span class="news-date">August 2025</span><br>
-            English expert Julian Wood joins the Bangladesh support staff as power-hitting coach while the BCB also seeks a new sports psychologist for the national setup[web:82].
-        </div>
+<!-- T20I Squad -->
+<h2>Current T20I Squad</h2>
+<div class="squad-list">
+  <div class="player-card"><div class="player-name"><strong>Najmul Hossain Shanto</strong> (Captain)</div><div class="player-role">Top Order Batsman</div></div>
+  <div class="player-card"><div class="player-name"><strong>Liton Das</strong></div><div class="player-role">Opener/Wicketkeeper</div></div>
+  <div class="player-card"><div class="player-name"><strong>Towhid Hridoy</strong></div><div class="player-role">Middle Order</div></div>
+  <div class="player-card"><div class="player-name"><strong>Naim Sheikh</strong></div><div class="player-role">Opener</div></div>
+  <div class="player-card"><div class="player-name"><strong>Rony Talukdar</strong></div><div class="player-role">Opener</div></div>
+  <div class="player-card"><div class="player-name"><strong>Sakib Al Hasan</strong></div><div class="player-role">Allrounder</div></div>
+  <div class="player-card"><div class="player-name"><strong>Afif Hossain</strong></div><div class="player-role">Allrounder</div></div>
+  <div class="player-card"><div class="player-name"><strong>Mehidy Hasan Miraz</strong></div><div class="player-role">Allrounder/Spinner</div></div>
+  <div class="player-card"><div class="player-name"><strong>Taskin Ahmed</strong></div><div class="player-role">Fast Bowler</div></div>
+  <div class="player-card"><div class="player-name"><strong>Shoriful Islam</strong></div><div class="player-role">Fast Bowler</div></div>
+  <div class="player-card"><div class="player-name"><strong>Mustafizur Rahman</strong></div><div class="player-role">Fast Bowler</div></div>
+  <div class="player-card"><div class="player-name"><strong>Nasum Ahmed</strong></div><div class="player-role">Spinner</div></div>
+</div>
 
-        <div class="news-item">
-            <span class="news-headline">Mahedi Hasan dismisses ‘condition specific’ tag</span><br>
-            <span class="news-date">July 30, 2025</span><br>
-            Mahedi Hasan says he has embraced learning across all roles rather than being termed “condition specific” after returning to form with four wickets in the T20I series against Sri Lanka[web:82].
-        </div>
-
-        <div class="news-item">
-            <span class="news-headline">Bangladesh clinches first T20I series win over Sri Lanka</span><br>
-            <span class="news-date">July 18, 2025</span><br>
-            Mahedi Hasan’s four-wicket haul and Tanzid Hasan's 73 secured Bangladesh’s historic maiden T20I series victory over Sri Lanka, marking a major milestone for the team[web:82].
-        </div>
-    </div>
+<!-- Star Players Table -->
+<h2>Star Players (All-Time)</h2>
+<table class="star-players" style="font-size:1.05em;">
+  <tr>
+    <th>Player</th>
+    <th>Format</th>
+    <th style="font-size:1.2em; color:#006a4e;">Achievements</th>
+  </tr>
+  <tr>
+    <td><b>Shakib Al Hasan</b></td>
+    <td>All Formats</td>
+    <td style="font-size:1.15em;font-weight:bold;color:#e53935;">Arguably world's best allrounder</td>
+  </tr>
+  <tr>
+    <td><b>Tamim Iqbal</b></td>
+    <td>Test/ODI/T20I</td>
+    <td style="font-size:1.15em;font-weight:bold;color:#e53935;">First Bangladesh batsman 10k runs</td>
+  </tr>
+  <tr>
+    <td><b>Mashrafe Mortaza</b></td>
+    <td>ODI/Test</td>
+    <td style="font-size:1.15em;font-weight:bold;color:#e53935;">Inspirational captain, leading pacer</td>
+  </tr>
+  <tr>
+    <td><b>Mushfiqur Rahim</b></td>
+    <td>Test/ODI/T20I</td>
+    <td style="font-size:1.15em;font-weight:bold;color:#e53935;">Keeper, clutch match-winner</td>
+  </tr>
+  <tr>
+    <td><b>Mahmudullah Riyad</b></td>
+    <td>ODI/T20I</td>
+    <td style="font-size:1.15em;font-weight:bold;color:#e53935;">Finisher, great leader</td>
+  </tr>
+  <tr>
+    <td><b>Mustafizur Rahman</b></td>
+    <td>ODI/T20I</td>
+    <td style="font-size:1.15em;font-weight:bold;color:#e53935;">"The Fizz", T20 and ODI star</td>
+  </tr>
+  <tr>
+    <td><b>Habibul Bashar</b></td>
+    <td>Test/ODI</td>
+    <td style="font-size:1.15em;font-weight:bold;color:#e53935;">Early Test cricket pioneer</td>
+  </tr>
+  <tr>
+    <td><b>Mohammad Rafique</b></td>
+    <td>Test/ODI</td>
+    <td style="font-size:1.15em;font-weight:bold;color:#e53935;">First spin hero</td>
+  </tr>
+  <tr>
+    <td><b>Javed Omar</b></td>
+    <td>Test/ODI</td>
+    <td style="font-size:1.15em;font-weight:bold;color:#e53935;">Historic opener</td>
+  </tr>
+  <tr>
+    <td><b>Aminul Islam Bulbul</b></td>
+    <td>Test/ODI</td>
+    <td style="font-size:1.15em;font-weight:bold;color:#e53935;">Scored Bangladesh's first Test century</td>
+  </tr>
+</table>  
 </body>
 </html>
+
 
