@@ -1,119 +1,289 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7227512149078461"
-     crossorigin="anonymous"></script>
-  <meta charset="UTF-8">
-  <title>Cricket Rankings</title>
+  <title>Cricket World Rankings 2025</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #f4f8fb;
       margin: 0;
       padding: 0;
-      background: #f4f4f4;
     }
-    header {
-      background: #1a1a1a;
-      color: white;
-      padding: 15px;
+    h1 {
       text-align: center;
+      color: #283e63;
+      margin-top: 32px;
+      margin-bottom: 16px;
+      font-size: 2.6em;
+      font-weight: 700;
+      letter-spacing: 0.5px;
     }
-    .container {
-      padding: 20px;
+    .ranking-nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 22px;
     }
-    h2 {
-      margin-top: 30px;
+    .ranking-nav button {
+      background: #2762b3;
+      color: #fff;
+      border: none;
+      border-radius: 23px;
+      padding: 8px 28px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background 0.2s;
+      font-weight: 600;
+    }
+    .ranking-nav button.active,
+    .ranking-nav button:hover {
+      background: #14315e;
+    }
+    .ranking-section {
+      display: none;
+      flex-wrap: wrap;
+      gap: 24px;
+      justify-content: center;
+      padding-bottom: 16px;
+    }
+    .ranking-section.visible {
+      display: flex;
+    }
+    .card {
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 3px 16px #bbcbe433;
+      width: 238px;
+      min-height: 115px;
+      margin: 8px;
+      padding: 14px 18px 22px 18px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      border-left: 7px solid #2e7fdc;
+      position: relative;
+      transition: box-shadow 0.2s;
+    }
+    .card .rank {
+      position: absolute;
+      top: 16px;
+      right: 18px;
+      background: #2e7fdc;
+      color: #fff;
+      border-radius: 50%;
+      width: 32px;
+      height: 32px;
       text-align: center;
-      color: #1a1a1a;
+      line-height: 32px;
+      font-weight: bold;
+      font-size: 1.09em;
+      box-shadow: 0 2px 4px #abc7ed60;
     }
-    table {
-      margin: 20px auto;
-      border-collapse: collapse;
-      width: 70%;
-      background: white;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    .card .name {
+      font-size: 1.09em;
+      margin-bottom: 6px;
+      font-weight: bold;
+      color: #23385e;
+      letter-spacing: 0.5px;
     }
-    table th, table td {
-      padding: 12px;
-      border: 1px solid #ddd;
-      text-align: center;
+    .card .country, .card .points {
+      font-size: 0.97em;
+      color: #2762b3;
+      margin-bottom: 6px;
+      font-weight: 500;
     }
-    table th {
-      background: #333;
-      color: white;
-    }
-    table tr:nth-child(even) {
-      background: #f9f9f9;
+    .card .points { color: #278e4d; }
+    @media (max-width: 800px) {
+      .card { width: 98vw; min-width: 160px; font-size: 0.93em; }
+      .ranking-nav { gap: 7px; }
+      h1 { font-size: 1.5em; }
     }
   </style>
+  <script>
+    function showSection(id, btn) {
+      document.querySelectorAll('.ranking-section').forEach(sec => sec.classList.remove('visible'));
+      document.getElementById(id).classList.add('visible');
+      document.querySelectorAll('.ranking-nav button').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+    }
+    window.onload = function() {
+      document.querySelector('.ranking-nav button').click();
+    }
+  </script>
 </head>
 <body>
-  <script type="text/javascript">
-	atOptions = {
-		'key' : '2bae1cce63080a494f880bc2275f0dae',
-		'format' : 'iframe',
-		'height' : 60,
-		'width' : 468,
-		'params' : {}
-	};
-</script>
-<script type="text/javascript" src="//www.highperformanceformat.com/2bae1cce63080a494f880bc2275f0dae/invoke.js"></script>
-  <header>
-    <h1>Cricket Rankings</h1>
-  </header>
-
-  <div class="container">
-
-    <!-- Men's Rankings -->
-    <h2>Men's Test Rankings</h2>
-    <table>
-      <tr><th>Rank</th><th>Team</th></tr>
-      <tr><td>1</td><td>India</td></tr>
-      <tr><td>2</td><td>Australia</td></tr>
-      <tr><td>3</td><td>England</td></tr>
-    </table>
-
-    <h2>Men's ODI Rankings</h2>
-    <table>
-      <tr><th>Rank</th><th>Team</th></tr>
-      <tr><td>1</td><td>India</td></tr>
-      <tr><td>2</td><td>Australia</td></tr>
-      <tr><td>3</td><td>South Africa</td></tr>
-    </table>
-
-    <h2>Men's T20I Rankings</h2>
-    <table>
-      <tr><th>Rank</th><th>Team</th></tr>
-      <tr><td>1</td><td>India</td></tr>
-      <tr><td>2</td><td>England</td></tr>
-      <tr><td>3</td><td>Pakistan</td></tr>
-    </table>
-
-    <!-- Women's Rankings -->
-    <h2>Women's Test Rankings</h2>
-    <table>
-      <tr><th>Rank</th><th>Team</th></tr>
-      <tr><td>1</td><td>Australia</td></tr>
-      <tr><td>2</td><td>England</td></tr>
-      <tr><td>3</td><td>India</td></tr>
-    </table>
-
-    <h2>Women's ODI Rankings</h2>
-    <table>
-      <tr><th>Rank</th><th>Team</th></tr>
-      <tr><td>1</td><td>Australia</td></tr>
-      <tr><td>2</td><td>England</td></tr>
-      <tr><td>3</td><td>South Africa</td></tr>
-    </table>
-
-    <h2>Women's T20I Rankings</h2>
-    <table>
-      <tr><th>Rank</th><th>Team</th></tr>
-      <tr><td>1</td><td>Australia</td></tr>
-      <tr><td>2</td><td>India</td></tr>
-      <tr><td>3</td><td>England</td></tr>
-    </table>
-
+  <h1>🌏 ICC World Cricket Rankings 2025</h1>
+  <div class="ranking-nav">
+    <button onclick="showSection('mens-odi-players',this)">Men's ODI Players</button>
+    <button onclick="showSection('mens-test-players',this)">Men's Test Players</button>
+    <button onclick="showSection('mens-t20i-players',this)">Men's T20I Players</button>
+    <button onclick="showSection('womens-odi-players',this)">Women's ODI Players</button>
+    <button onclick="showSection('womens-test-players',this)">Women's Test Players</button>
+    <button onclick="showSection('womens-t20i-players',this)">Women's T20I Players</button>
+    <button onclick="showSection('mens-odi-teams',this)">Men's ODI Teams</button>
+    <button onclick="showSection('mens-test-teams',this)">Men's Test Teams</button>
+    <button onclick="showSection('mens-t20i-teams',this)">Men's T20I Teams</button>
+    <button onclick="showSection('womens-odi-teams',this)">Women's ODI Teams</button>
+    <button onclick="showSection('womens-test-teams',this)">Women's Test Teams</button>
+    <button onclick="showSection('womens-t20i-teams',this)">Women's T20I Teams</button>
+  </div>
+  
+  <!-- MEN'S ODI PLAYERS -->
+  <div id="mens-odi-players" class="ranking-section visible">
+    <div class="card"><span class="rank">1</span><div class="name">Shubman Gill</div><div class="country">India</div><div class="points">818 pts</div></div>
+    <div class="card"><span class="rank">2</span><div class="name">Babar Azam</div><div class="country">Pakistan</div><div class="points">792 pts</div></div>
+    <div class="card"><span class="rank">3</span><div class="name">Virat Kohli</div><div class="country">India</div><div class="points">763 pts</div></div>
+    <div class="card"><span class="rank">4</span><div class="name">Rohit Sharma</div><div class="country">India</div><div class="points">761 pts</div></div>
+    <div class="card"><span class="rank">5</span><div class="name">David Warner</div><div class="country">Australia</div><div class="points">745 pts</div></div>
+    <div class="card"><span class="rank">6</span><div class="name">Daryl Mitchell</div><div class="country">New Zealand</div><div class="points">741 pts</div></div>
+    <div class="card"><span class="rank">7</span><div class="name">Steve Smith</div><div class="country">Australia</div><div class="points">734 pts</div></div>
+    <div class="card"><span class="rank">8</span><div class="name">Fakhar Zaman</div><div class="country">Pakistan</div><div class="points">727 pts</div></div>
+    <div class="card"><span class="rank">9</span><div class="name">Quinton de Kock</div><div class="country">South Africa</div><div class="points">719 pts</div></div>
+    <div class="card"><span class="rank">10</span><div class="name">Kane Williamson</div><div class="country">New Zealand</div><div class="points">715 pts</div></div>
+  </div>
+  <!-- MEN'S TEST PLAYERS -->
+  <div id="mens-test-players" class="ranking-section">
+    <div class="card"><span class="rank">1</span><div class="name">Joe Root</div><div class="country">England</div><div class="points">876 pts</div></div>
+    <div class="card"><span class="rank">2</span><div class="name">Kane Williamson</div><div class="country">New Zealand</div><div class="points">859 pts</div></div>
+    <div class="card"><span class="rank">3</span><div class="name">Steve Smith</div><div class="country">Australia</div><div class="points">841 pts</div></div>
+    <div class="card"><span class="rank">4</span><div class="name">Marnus Labuschagne</div><div class="country">Australia</div><div class="points">813 pts</div></div>
+    <div class="card"><span class="rank">5</span><div class="name">Travis Head</div><div class="country">Australia</div><div class="points">796 pts</div></div>
+    <div class="card"><span class="rank">6</span><div class="name">Babar Azam</div><div class="country">Pakistan</div><div class="points">780 pts</div></div>
+    <div class="card"><span class="rank">7</span><div class="name">Usman Khawaja</div><div class="country">Australia</div><div class="points">767 pts</div></div>
+    <div class="card"><span class="rank">8</span><div class="name">Dimuth Karunaratne</div><div class="country">Sri Lanka</div><div class="points">762 pts</div></div>
+    <div class="card"><span class="rank">9</span><div class="name">Daryl Mitchell</div><div class="country">New Zealand</div><div class="points">755 pts</div></div>
+    <div class="card"><span class="rank">10</span><div class="name">Tom Latham</div><div class="country">New Zealand</div><div class="points">748 pts</div></div>
+  </div>
+  <!-- MEN'S T20I PLAYERS -->
+  <div id="mens-t20i-players" class="ranking-section">
+    <div class="card"><span class="rank">1</span><div class="name">Suryakumar Yadav</div><div class="country">India</div><div class="points">884 pts</div></div>
+    <div class="card"><span class="rank">2</span><div class="name">Mohammad Rizwan</div><div class="country">Pakistan</div><div class="points">837 pts</div></div>
+    <div class="card"><span class="rank">3</span><div class="name">Aiden Markram</div><div class="country">South Africa</div><div class="points">758 pts</div></div>
+    <div class="card"><span class="rank">4</span><div class="name">Babar Azam</div><div class="country">Pakistan</div><div class="points">756 pts</div></div>
+    <div class="card"><span class="rank">5</span><div class="name">Jos Buttler</div><div class="country">England</div><div class="points">741 pts</div></div>
+    <div class="card"><span class="rank">6</span><div class="name">Phil Salt</div><div class="country">England</div><div class="points">726 pts</div></div>
+    <div class="card"><span class="rank">7</span><div class="name">Rilee Rossouw</div><div class="country">South Africa</div><div class="points">724 pts</div></div>
+    <div class="card"><span class="rank">8</span><div class="name">Tim Seifert</div><div class="country">New Zealand</div><div class="points">698 pts</div></div>
+    <div class="card"><span class="rank">9</span><div class="name">Glenn Phillips</div><div class="country">New Zealand</div><div class="points">689 pts</div></div>
+    <div class="card"><span class="rank">10</span><div class="name">Rahmanullah Gurbaz</div><div class="country">Afghanistan</div><div class="points">682 pts</div></div>
+  </div>
+  <!-- WOMEN'S ODI PLAYERS -->
+  <div id="womens-odi-players" class="ranking-section">
+    <div class="card"><span class="rank">1</span><div class="name">Laura Wolvaardt</div><div class="country">South Africa</div><div class="points">773 pts</div></div>
+    <div class="card"><span class="rank">2</span><div class="name">Smriti Mandhana</div><div class="country">India</div><div class="points">738 pts</div></div>
+    <div class="card"><span class="rank">3</span><div class="name">Natalie Sciver-Brunt</div><div class="country">England</div><div class="points">725 pts</div></div>
+    <div class="card"><span class="rank">4</span><div class="name">Chamari Athapaththu</div><div class="country">Sri Lanka</div><div class="points">688 pts</div></div>
+    <div class="card"><span class="rank">5</span><div class="name">Ellyse Perry</div><div class="country">Australia</div><div class="points">684 pts</div></div>
+    <div class="card"><span class="rank">6</span><div class="name">Beth Mooney</div><div class="country">Australia</div><div class="points">675 pts</div></div>
+    <div class="card"><span class="rank">7</span><div class="name">Meg Lanning</div><div class="country">Australia</div><div class="points">669 pts</div></div>
+    <div class="card"><span class="rank">8</span><div class="name">Alyssa Healy</div><div class="country">Australia</div><div class="points">660 pts</div></div>
+    <div class="card"><span class="rank">9</span><div class="name">Sophie Devine</div><div class="country">New Zealand</div><div class="points">656 pts</div></div>
+    <div class="card"><span class="rank">10</span><div class="name">Amy Satterthwaite</div><div class="country">New Zealand</div><div class="points">650 pts</div></div>
+  </div>
+  <!-- WOMEN'S TEST PLAYERS -->
+  <div id="womens-test-players" class="ranking-section">
+    <div class="card"><span class="rank">1</span><div class="name">Heather Knight</div><div class="country">England</div><div class="points">744 pts</div></div>
+    <div class="card"><span class="rank">2</span><div class="name">Ellyse Perry</div><div class="country">Australia</div><div class="points">722 pts</div></div>
+    <div class="card"><span class="rank">3</span><div class="name">Sophie Devine</div><div class="country">New Zealand</div><div class="points">705 pts</div></div>
+    <div class="card"><span class="rank">4</span><div class="name">Natalie Sciver-Brunt</div><div class="country">England</div><div class="points">699 pts</div></div>
+    <div class="card"><span class="rank">5</span><div class="name">Beth Mooney</div><div class="country">Australia</div><div class="points">691 pts</div></div>
+    <div class="card"><span class="rank">6</span><div class="name">Mignon du Preez</div><div class="country">South Africa</div><div class="points">680 pts</div></div>
+    <div class="card"><span class="rank">7</span><div class="name">Meg Lanning</div><div class="country">Australia</div><div class="points">676 pts</div></div>
+    <div class="card"><span class="rank">8</span><div class="name">Alyssa Healy</div><div class="country">Australia</div><div class="points">671 pts</div></div>
+    <div class="card"><span class="rank">9</span><div class="name">Tahlia McGrath</div><div class="country">Australia</div><div class="points">668 pts</div></div>
+    <div class="card"><span class="rank">10</span><div class="name">Amelia Kerr</div><div class="country">New Zealand</div><div class="points">665 pts</div></div>
+  </div>
+  <!-- WOMEN'S T20I PLAYERS -->
+  <div id="womens-t20i-players" class="ranking-section">
+    <div class="card"><span class="rank">1</span><div class="name">Beth Mooney</div><div class="country">Australia</div><div class="points">794 pts</div></div>
+    <div class="card"><span class="rank">2</span><div class="name">Hayley Matthews</div><div class="country">West Indies</div><div class="points">774 pts</div></div>
+    <div class="card"><span class="rank">3</span><div class="name">Smriti Mandhana</div><div class="country">India</div><div class="points">767 pts</div></div>
+    <div class="card"><span class="rank">4</span><div class="name">Sophie Devine</div><div class="country">New Zealand</div><div class="points">762 pts</div></div>
+    <div class="card"><span class="rank">5</span><div class="name">Meg Lanning</div><div class="country">Australia</div><div class="points">757 pts</div></div>
+    <div class="card"><span class="rank">6</span><div class="name">Alyssa Healy</div><div class="country">Australia</div><div class="points">753 pts</div></div>
+    <div class="card"><span class="rank">7</span><div class="name">Tahlia McGrath</div><div class="country">Australia</div><div class="points">749 pts</div></div>
+    <div class="card"><span class="rank">8</span><div class="name">Natalie Sciver-Brunt</div><div class="country">England</div><div class="points">743 pts</div></div>
+    <div class="card"><span class="rank">9</span><div class="name">Shafali Verma</div><div class="country">India</div><div class="points">740 pts</div></div>
+    <div class="card"><span class="rank">10</span><div class="name">Amelia Kerr</div><div class="country">New Zealand</div><div class="points">736 pts</div></div>
+  </div>
+  <!-- MEN'S ODI TEAMS -->
+  <div id="mens-odi-teams" class="ranking-section">
+    <div class="card"><span class="rank">1</span><div class="name">India</div><div class="points">124 pts</div></div>
+    <div class="card"><span class="rank">2</span><div class="name">Australia</div><div class="points">117 pts</div></div>
+    <div class="card"><span class="rank">3</span><div class="name">New Zealand</div><div class="points">110 pts</div></div>
+    <div class="card"><span class="rank">4</span><div class="name">England</div><div class="points">110 pts</div></div>
+    <div class="card"><span class="rank">5</span><div class="name">South Africa</div><div class="points">104 pts</div></div>
+    <div class="card"><span class="rank">6</span><div class="name">Pakistan</div><div class="points">102 pts</div></div>
+    <div class="card"><span class="rank">7</span><div class="name">Bangladesh</div><div class="points">89 pts</div></div>
+    <div class="card"><span class="rank">8</span><div class="name">Sri Lanka</div><div class="points">87 pts</div></div>
+    <div class="card"><span class="rank">9</span><div class="name">West Indies</div><div class="points">73 pts</div></div>
+    <div class="card"><span class="rank">10</span><div class="name">Afghanistan</div><div class="points">71 pts</div></div>
+  </div>
+  <!-- MEN'S TEST TEAMS -->
+  <div id="mens-test-teams" class="ranking-section">
+    <div class="card"><span class="rank">1</span><div class="name">Australia</div><div class="points">128 pts</div></div>
+    <div class="card"><span class="rank">2</span><div class="name">India</div><div class="points">122 pts</div></div>
+    <div class="card"><span class="rank">3</span><div class="name">England</div><div class="points">116 pts</div></div>
+    <div class="card"><span class="rank">4</span><div class="name">South Africa</div><div class="points">109 pts</div></div>
+    <div class="card"><span class="rank">5</span><div class="name">New Zealand</div><div class="points">106 pts</div></div>
+    <div class="card"><span class="rank">6</span><div class="name">Pakistan</div><div class="points">95 pts</div></div>
+    <div class="card"><span class="rank">7</span><div class="name">Sri Lanka</div><div class="points">82 pts</div></div>
+    <div class="card"><span class="rank">8</span><div class="name">West Indies</div><div class="points">76 pts</div></div>
+    <div class="card"><span class="rank">9</span><div class="name">Bangladesh</div><div class="points">53 pts</div></div>
+    <div class="card"><span class="rank">10</span><div class="name">Zimbabwe</div><div class="points">40 pts</div></div>
+  </div>
+  <!-- MEN'S T20I TEAMS -->
+  <div id="mens-t20i-teams" class="ranking-section">
+    <div class="card"><span class="rank">1</span><div class="name">India</div><div class="points">264 pts</div></div>
+    <div class="card"><span class="rank">2</span><div class="name">Australia</div><div class="points">256 pts</div></div>
+    <div class="card"><span class="rank">3</span><div class="name">England</div><div class="points">251 pts</div></div>
+    <div class="card"><span class="rank">4</span><div class="name">New Zealand</div><div class="points">249 pts</div></div>
+    <div class="card"><span class="rank">5</span><div class="name">West Indies</div><div class="points">246 pts</div></div>
+    <div class="card"><span class="rank">6</span><div class="name">South Africa</div><div class="points">245 pts</div></div>
+    <div class="card"><span class="rank">7</span><div class="name">Sri Lanka</div><div class="points">235 pts</div></div>
+    <div class="card"><span class="rank">8</span><div class="name">Pakistan</div><div class="points">228 pts</div></div>
+    <div class="card"><span class="rank">9</span><div class="name">Bangladesh</div><div class="points">225 pts</div></div>
+    <div class="card"><span class="rank">10</span><div class="name">Afghanistan</div><div class="points">223 pts</div></div>
+  </div>
+  <!-- WOMEN'S ODI TEAMS -->
+  <div id="womens-odi-teams" class="ranking-section">
+    <div class="card"><span class="rank">1</span><div class="name">Australia</div><div class="points">167 pts</div></div>
+    <div class="card"><span class="rank">2</span><div class="name">England</div><div class="points">128 pts</div></div>
+    <div class="card"><span class="rank">3</span><div class="name">India</div><div class="points">121 pts</div></div>
+    <div class="card"><span class="rank">4</span><div class="name">New Zealand</div><div class="points">96 pts</div></div>
+    <div class="card"><span class="rank">5</span><div class="name">South Africa</div><div class="points">90 pts</div></div>
+    <div class="card"><span class="rank">6</span><div class="name">Sri Lanka</div><div class="points">82 pts</div></div>
+    <div class="card"><span class="rank">7</span><div class="name">Bangladesh</div><div class="points">79 pts</div></div>
+    <div class="card"><span class="rank">8</span><div class="name">Pakistan</div><div class="points">78 pts</div></div>
+    <div class="card"><span class="rank">9</span><div class="name">West Indies</div><div class="points">71 pts</div></div>
+    <div class="card"><span class="rank">10</span><div class="name">Ireland</div><div class="points">50 pts</div></div>
+  </div>
+  <!-- WOMEN'S TEST TEAMS -->
+  <div id="womens-test-teams" class="ranking-section">
+    <div class="card"><span class="rank">1</span><div class="name">Australia</div><div class="points">112 pts</div></div>
+    <div class="card"><span class="rank">2</span><div class="name">England</div><div class="points">110 pts</div></div>
+    <div class="card"><span class="rank">3</span><div class="name">India</div><div class="points">108 pts</div></div>
+    <div class="card"><span class="rank">4</span><div class="name">South Africa</div><div class="points">105 pts</div></div>
+    <div class="card"><span class="rank">5</span><div class="name">West Indies</div><div class="points">103 pts</div></div>
+    <div class="card"><span class="rank">6</span><div class="name">New Zealand</div><div class="points">101 pts</div></div>
+    <div class="card"><span class="rank">7</span><div class="name">Bangladesh</div><div class="points">98 pts</div></div>
+    <div class="card"><span class="rank">8</span><div class="name">Pakistan</div><div class="points">95 pts</div></div>
+    <div class="card"><span class="rank">9</span><div class="name">Sri Lanka</div><div class="points">93 pts</div></div>
+    <div class="card"><span class="rank">10</span><div class="name">Ireland</div><div class="points">89 pts</div></div>
+  </div>
+  <!-- WOMEN'S T20I TEAMS -->
+  <div id="womens-t20i-teams" class="ranking-section">
+    <div class="card"><span class="rank">1</span><div class="name">Australia Women</div><div class="points">297 pts</div></div>
+    <div class="card"><span class="rank">2</span><div class="name">England Women</div><div class="points">279 pts</div></div>
+    <div class="card"><span class="rank">3</span><div class="name">India Women</div><div class="points">260 pts</div></div>
+    <div class="card"><span class="rank">4</span><div class="name">New Zealand Women</div><div class="points">251 pts</div></div>
+    <div class="card"><span class="rank">5</span><div class="name">South Africa Women</div><div class="points">242 pts</div></div>
+    <div class="card"><span class="rank">6</span><div class="name">West Indies Women</div><div class="points">242 pts</div></div>
+    <div class="card"><span class="rank">7</span><div class="name">Sri Lanka Women</div><div class="points">229 pts</div></div>
+    <div class="card"><span class="rank">8</span><div class="name">Pakistan Women</div><div class="points">219 pts</div></div>
+    <div class="card"><span class="rank">9</span><div class="name">Bangladesh Women</div><div class="points">195 pts</div></div>
+    <div class="card"><span class="rank">10</span><div class="name">Ireland Women</div><div class="points">194 pts</div></div>
   </div>
 </body>
 </html>
